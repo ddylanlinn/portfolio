@@ -28,9 +28,8 @@ const Contact = () => {
 		e.preventDefault()
 		setIsSubmitting(true)
 
-		// Simulating form submission
 		try {
-			await new Promise((resolve) => setTimeout(resolve, 1500)) // Simulating API call
+			await new Promise((resolve) => setTimeout(resolve, 1500))
 			setSubmitStatus('success')
 			setFormData({ name: '', email: '', subject: '', message: '' })
 		} catch (error) {
@@ -38,7 +37,6 @@ const Contact = () => {
 		} finally {
 			setIsSubmitting(false)
 
-			// Reset status after 5 seconds
 			setTimeout(() => {
 				setSubmitStatus(null)
 			}, 5000)

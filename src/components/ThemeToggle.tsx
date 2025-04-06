@@ -7,7 +7,6 @@ import { FiSun, FiMoon } from 'react-icons/fi'
 const ThemeToggle = () => {
 	const { theme, toggleTheme, mounted } = useTheme()
 
-	// Render a placeholder during SSR to avoid hydration mismatch
 	if (!mounted) {
 		return (
 			<div className="p-2 rounded-full" aria-label="Loading theme toggle">
