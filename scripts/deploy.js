@@ -1,6 +1,7 @@
 // Simple script for local deployment to GitHub Pages
 const { execSync } = require('child_process')
 const path = require('path')
+const ghpages = require('gh-pages')
 
 // Settings
 const GITHUB_REPO = 'origin' // your remote repo name, typically 'origin'
@@ -14,6 +15,7 @@ const colors = {
 	green: '\x1b[32m',
 	cyan: '\x1b[36m',
 	yellow: '\x1b[33m',
+	red: '\x1b[31m',
 }
 
 // Helper to print colorful status messages
@@ -24,6 +26,8 @@ const log = {
 		console.log(`${colors.bright}${colors.green}✓ ${msg}${colors.reset}`),
 	warning: (msg) =>
 		console.log(`${colors.bright}${colors.yellow}⚠ ${msg}${colors.reset}`),
+	error: (msg) =>
+		console.log(`${colors.bright}${colors.red}✗ ${msg}${colors.reset}`),
 }
 
 // Main function
@@ -39,16 +43,30 @@ async function deploy() {
 		// Step 2: Push the out directory to gh-pages branch
 		log.info('Deploying to GitHub Pages...')
 
-		// Create/update gh-pages branch with out directory contents
-		execSync(`npx gh-pages -d out -b ${BRANCH_NAME} -m "${COMMIT_MESSAGE}"`, {
-			stdio: 'inherit',
-			cwd: root,
+		// Using the gh-pages module directly for more control
+		await new Promise((resolve, reject) => {
+			ghpages.publish(
+				path.join(root, 'out'),
+				{
+					branch: BRANCH_NAME,
+					message: COMMIT_MESSAGE,
+					dotfiles: true, // Ensure .nojekyll and other dotfiles are included
+				},
+				(err) => {
+					if (err) {
+						reject(err)
+					} else {
+						resolve()
+					}
+				}
+			)
 		})
 
 		log.success('Deployment completed successfully!')
 		log.info('Your site should be available shortly at your GitHub Pages URL')
 	} catch (error) {
-		console.error('Error during deployment:', error)
+		log.error(`Error during deployment: ${error.message}`)
+		console.error(error)
 		process.exit(1)
 	}
 }
