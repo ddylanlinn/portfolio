@@ -2,27 +2,26 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/context/ThemeContext'
+import { LanguageProvider } from '@/context/LanguageContext'
 
-const inter = Inter({
-	subsets: ['latin'],
-	variable: '--font-inter',
-})
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-	title: 'Portfolio | Dylan',
-	description: 'Personal portfolio website showcasing projects and skills',
-	keywords: ['portfolio', 'developer', 'design', 'projects'],
+	title: 'Dylan Lin - Portfolio',
+	description: 'Frontend Developer & UI/UX Designer',
 }
 
 export default function RootLayout({
 	children,
-}: Readonly<{
+}: {
 	children: React.ReactNode
-}>) {
+}) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body className={`${inter.variable} font-sans`} suppressHydrationWarning>
-				<ThemeProvider>{children}</ThemeProvider>
+			<body className={inter.className}>
+				<ThemeProvider>
+					<LanguageProvider>{children}</LanguageProvider>
+				</ThemeProvider>
 			</body>
 		</html>
 	)

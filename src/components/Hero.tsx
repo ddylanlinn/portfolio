@@ -4,8 +4,23 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { FiArrowDown } from 'react-icons/fi'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { useLanguage } from '@/context/LanguageContext'
 
 const Hero = () => {
+	const { messages } = useLanguage()
+
+	const hero = messages.hero || {
+		greeting: "Hi, I'm",
+		title: 'Frontend Developer & UI/UX Designer',
+		description:
+			'I create beautiful, responsive websites and applications with a focus on user experience and clean code.',
+		cta: {
+			contact: 'Contact Me',
+			projects: 'View Projects',
+		},
+		scrollDown: 'Scroll Down',
+	}
+
 	return (
 		<section
 			id="home"
@@ -21,23 +36,20 @@ const Hero = () => {
 						className="order-2 md:order-1"
 					>
 						<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-3">
-							Hello, I'm{' '}
+							{hero.greeting}{' '}
 							<span className="text-[var(--primary)]">Dylan CH Lin</span>
 						</h1>
 						<h2 className="text-lg sm:text-xl text-[var(--text-secondary)] mb-4">
-							Web Developer & Designer
+							{hero.title}
 						</h2>
-						<p className="text-base mb-6 max-w-lg">
-							I create beautiful, responsive websites with a focus on user
-							experience. Let's collaborate to bring your ideas to life.
-						</p>
+						<p className="text-base mb-6 max-w-lg">{hero.description}</p>
 
 						<div className="flex flex-wrap gap-3">
-							<a href="#contact" className="button-primary">
-								Get In Touch
+							<a href="#contact" className="button-primary cursor-pointer">
+								{hero.cta.contact}
 							</a>
-							<a href="#projects" className="button-outline">
-								View Projects
+							<a href="#projects" className="button-outline cursor-pointer">
+								{hero.cta.projects}
 							</a>
 						</div>
 
@@ -46,7 +58,7 @@ const Hero = () => {
 								href="https://github.com"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors"
+								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
 								aria-label="GitHub"
 							>
 								<FaGithub size={22} />
@@ -55,7 +67,7 @@ const Hero = () => {
 								href="https://linkedin.com"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors"
+								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
 								aria-label="LinkedIn"
 							>
 								<FaLinkedin size={22} />
@@ -64,7 +76,7 @@ const Hero = () => {
 								href="https://twitter.com"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors"
+								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
 								aria-label="Twitter"
 							>
 								<FaTwitter size={22} />
@@ -106,9 +118,9 @@ const Hero = () => {
 			>
 				<a
 					href="#about"
-					className="flex flex-col items-center text-sm text-[var(--text-secondary)]"
+					className="flex flex-col items-center text-sm text-[var(--text-secondary)] cursor-pointer"
 				>
-					<span className="mb-1">Scroll Down</span>
+					<span className="mb-1">{hero.scrollDown}</span>
 					<FiArrowDown size={18} />
 				</a>
 			</motion.div>

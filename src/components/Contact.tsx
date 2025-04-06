@@ -3,8 +3,32 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi'
+import { useLanguage } from '@/context/LanguageContext'
 
 const Contact = () => {
+	const { messages } = useLanguage()
+
+	const contact = messages.contact || {
+		title: 'Contact Me',
+		description:
+			"I'm always open to new opportunities and collaborations. Feel free to get in touch with me!",
+		form: {
+			name: 'Name',
+			email: 'Email',
+			subject: 'Subject',
+			message: 'Message',
+			sending: 'Sending...',
+			send: 'Send Message',
+			success: 'Thank you! Your message has been sent successfully.',
+			error: 'Oops! Something went wrong. Please try again later.',
+		},
+		info: {
+			email: 'Email',
+			phone: 'Phone',
+			location: 'Location',
+		},
+	}
+
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
@@ -46,19 +70,19 @@ const Contact = () => {
 	const contactInfo = [
 		{
 			icon: <FiMail size={20} />,
-			title: 'Email',
+			title: contact.info.email,
 			content: 'contact@example.com',
 			href: 'mailto:contact@example.com',
 		},
 		{
 			icon: <FiPhone size={20} />,
-			title: 'Phone',
+			title: contact.info.phone,
 			content: '+1 234 567 890',
 			href: 'tel:+1234567890',
 		},
 		{
 			icon: <FiMapPin size={20} />,
-			title: 'Location',
+			title: contact.info.location,
 			content: 'San Francisco, CA',
 			href: 'https://maps.google.com/?q=San+Francisco',
 		},
@@ -67,7 +91,7 @@ const Contact = () => {
 	return (
 		<section id="contact" className="py-6 md:py-12">
 			<div className="section-container">
-				<h2 className="section-title">Get In Touch</h2>
+				<h2 className="section-title">{contact.title}</h2>
 
 				<div className="grid md:grid-cols-2 gap-6">
 					{/* Contact Information */}
@@ -77,11 +101,7 @@ const Contact = () => {
 						viewport={{ once: true }}
 						transition={{ duration: 0.5 }}
 					>
-						<p className="text-lg mb-4">
-							I'm interested in freelance opportunities and collaborations. If
-							you have a project that needs my expertise, or if you just want to
-							say hi, feel free to reach out!
-						</p>
+						<p className="text-lg mb-4">{contact.description}</p>
 
 						<div className="space-y-3">
 							{contactInfo.map((info, index) => (
@@ -95,7 +115,7 @@ const Contact = () => {
 										</h3>
 										<a
 											href={info.href}
-											className="text-[var(--text-secondary)] hover:text-[var(--primary)]"
+											className="text-[var(--text-secondary)] hover:text-[var(--primary)] cursor-pointer"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
@@ -120,7 +140,7 @@ const Contact = () => {
 									htmlFor="name"
 									className="block text-sm font-medium mb-1 text-[var(--text-primary)]"
 								>
-									Name
+									{contact.form.name}
 								</label>
 								<input
 									type="text"
@@ -138,7 +158,7 @@ const Contact = () => {
 									htmlFor="email"
 									className="block text-sm font-medium mb-1 text-[var(--text-primary)]"
 								>
-									Email
+									{contact.form.email}
 								</label>
 								<input
 									type="email"
@@ -156,7 +176,7 @@ const Contact = () => {
 									htmlFor="subject"
 									className="block text-sm font-medium mb-1 text-[var(--text-primary)]"
 								>
-									Subject
+									{contact.form.subject}
 								</label>
 								<input
 									type="text"
@@ -174,7 +194,7 @@ const Contact = () => {
 									htmlFor="message"
 									className="block text-sm font-medium mb-1 text-[var(--text-primary)]"
 								>
-									Message
+									{contact.form.message}
 								</label>
 								<textarea
 									id="message"
@@ -190,20 +210,20 @@ const Contact = () => {
 							<button
 								type="submit"
 								disabled={isSubmitting}
-								className="button-primary w-full flex justify-center items-center"
+								className="button-primary w-full flex justify-center items-center cursor-pointer"
 							>
-								{isSubmitting ? 'Sending...' : 'Send Message'}
+								{isSubmitting ? contact.form.sending : contact.form.send}
 							</button>
 
 							{submitStatus === 'success' && (
 								<p className="text-green-600 dark:text-green-400 text-center">
-									Your message has been sent successfully!
+									{contact.form.success}
 								</p>
 							)}
 
 							{submitStatus === 'error' && (
 								<p className="text-red-600 dark:text-red-400 text-center">
-									There was an error sending your message. Please try again.
+									{contact.form.error}
 								</p>
 							)}
 						</form>

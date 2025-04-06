@@ -1,0 +1,195 @@
+{
+	"navigation": {
+		"home": "首頁",
+		"about": "關於我",
+		"experience": "工作經驗",
+		"projects": "專案作品",
+		"contact": "聯絡我"
+	},
+	"hero": {
+		"greeting": "嗨，我是",
+		"title": "網頁開發者 & 設計師",
+		"description": "我專注於創建美觀、響應式的網站，注重使用者體驗。讓我們一起合作，將您的想法變為現實。",
+		"cta": {
+			"contact": "聯絡我",
+			"projects": "查看作品"
+		},
+		"scrollDown": "向下滾動"
+	},
+	"about": {
+		"title": "關於我",
+		"description1": "我是一位充滿熱情的網頁開發者和設計師，擁有敏銳的細節觀察力和對創建美觀、實用網站的熱愛。憑藉多年的網頁開發經驗，我專注於創建響應式、用戶友好的網站，使其在任何設備上都能完美呈現。",
+		"description2": "我的網頁開發之旅始於發現將創意與技術技能結合的熱情。從那時起，我參與了各種項目，從小型企業網站到複雜的網絡應用程序，始終致力於提供超出預期的高質量作品。",
+		"description3": "當我不在編程時，你會發現我在探索新的設計趨勢，學習新技術，或享受戶外活動。我相信持續學習，並一直在尋求擴展自己的技能組合。",
+		"cta": "一起合作吧",
+		"skills": {
+			"title": "我的技能",
+			"categories": {
+				"frontend": "前端",
+				"backend": "後端",
+				"others": "其他"
+			}
+		}
+	},
+	"experience": {
+		"title": "工作經驗",
+		"period": "時間",
+		"technologiesUsed": "使用技術",
+		"list": [
+			{
+				"company": "科技創新公司",
+				"logo": "/images/company1.jpg",
+				"title": "資深前端開發工程師",
+				"period": "2022年1月 - 至今",
+				"description": [
+					"領導開發公司旗艦SaaS產品，使用React、NextJS和TypeScript。",
+					"實施CI/CD流程並將應用性能提升了40%。",
+					"與UX設計師合作創建直觀且無障礙的用戶界面。",
+					"指導初級開發人員並進行代碼審查以確保高代碼質量。"
+				],
+				"technologies": [
+					"React",
+					"Next.js",
+					"TypeScript",
+					"Redux",
+					"Tailwind CSS",
+					"GraphQL",
+					"AWS"
+				]
+			},
+			{
+				"company": "數位解決方案集團",
+				"logo": "/images/company2.jpg",
+				"title": "全棧開發工程師",
+				"period": "2019年3月 - 2021年12月",
+				"description": [
+					"為金融和醫療保健領域的客戶開發和維護多個網絡應用程序。",
+					"使用Node.js、Express構建RESTful API，並與各種數據庫系統集成。",
+					"實現響應式設計並確保跨瀏覽器兼容性。",
+					"參與敏捷開發流程和衝刺計劃。"
+				],
+				"technologies": [
+					"JavaScript",
+					"Node.js",
+					"Express",
+					"MySQL",
+					"MongoDB",
+					"React",
+					"Docker"
+				]
+			},
+			{
+				"company": "創意網頁工作室",
+				"logo": "/images/company3.jpg",
+				"title": "前端開發工程師",
+				"period": "2017年6月 - 2019年2月",
+				"description": [
+					"為電子商務和企業客戶創建響應式網頁界面。",
+					"與設計團隊合作實現像素完美的UI設計。",
+					"優化網站性能並實施SEO最佳實踐。",
+					"協助公司開發工作流程過渡到使用現代JavaScript框架。"
+				],
+				"technologies": [
+					"HTML5",
+					"CSS3",
+					"JavaScript",
+					"jQuery",
+					"Bootstrap",
+					"WordPress",
+					"PHP"
+				]
+			}
+		]
+	},
+	"projects": {
+		"title": "專案作品",
+		"liveDemo": "線上演示",
+		"viewCode": "程式碼",
+		"noProjects": "此類別中沒有找到專案。",
+		"list": [
+			{
+				"title": "電子商務網站",
+				"description": "一個全響應式電子商務平台，具有產品篩選和用戶認證功能。",
+				"image": "/images/project1.jpg",
+				"category": "web",
+				"technologies": ["React", "Node.js", "MongoDB", "Express"],
+				"github": "https://github.com",
+				"live": "https://example.com"
+			},
+			{
+				"title": "作品集網站",
+				"description": "具有動畫效果和響應式設計的創意作品集網站。",
+				"image": "/images/project2.jpg",
+				"category": "web",
+				"technologies": ["Next.js", "Tailwind CSS", "Framer Motion"],
+				"github": "https://github.com",
+				"live": "https://example.com"
+			},
+			{
+				"title": "天氣應用",
+				"description": "一款使用地理位置提供實時天氣信息的移動應用。",
+				"image": "/images/project3.jpg",
+				"category": "mobile",
+				"technologies": ["React Native", "TypeScript", "Weather API"],
+				"github": "https://github.com",
+				"live": "https://example.com"
+			},
+			{
+				"title": "品牌識別設計",
+				"description": "完整的品牌識別，包括標誌、配色方案和品牌指南。",
+				"image": "/images/project4.jpg",
+				"category": "design",
+				"technologies": ["Figma", "Illustrator", "Photoshop"],
+				"github": "https://github.com",
+				"live": "https://example.com"
+			},
+			{
+				"title": "任務管理應用",
+				"description": "一個幫助用戶組織任務和追蹤進度的生產力應用。",
+				"image": "/images/project5.jpg",
+				"category": "web",
+				"technologies": ["Vue.js", "Firebase", "Vuetify"],
+				"github": "https://github.com",
+				"live": "https://example.com"
+			},
+			{
+				"title": "餐廳網站",
+				"description": "一個具有在線訂餐和預訂功能的餐廳網站。",
+				"image": "/images/project6.jpg",
+				"category": "web",
+				"technologies": ["WordPress", "PHP", "MySQL", "Custom Theme"],
+				"github": "https://github.com",
+				"live": "https://example.com"
+			}
+		]
+	},
+	"contact": {
+		"title": "聯絡我",
+		"description": "我對自由工作機會和合作感興趣。如果您有需要我專業知識的項目，或者只是想打個招呼，請隨時聯繫！",
+		"form": {
+			"name": "姓名",
+			"email": "電子郵件",
+			"subject": "主旨",
+			"message": "訊息",
+			"sending": "發送中...",
+			"send": "發送訊息",
+			"success": "您的訊息已成功發送！",
+			"error": "發送訊息時出錯。請再試一次。"
+		},
+		"info": {
+			"email": "電子郵件",
+			"phone": "電話",
+			"location": "位置"
+		}
+	},
+	"footer": {
+		"tagline": "創造美好的數位體驗",
+		"quickLinks": "快速連結",
+		"connect": "連接",
+		"rights": "版權所有。"
+	},
+	"theme": {
+		"light": "切換到亮色模式",
+		"dark": "切換到暗色模式"
+	}
+}

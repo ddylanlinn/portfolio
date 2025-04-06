@@ -4,79 +4,48 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { BiLinkExternal } from 'react-icons/bi'
+import { useLanguage } from '@/context/LanguageContext'
+
+type Project = {
+	title: string
+	description: string
+	image: string
+	category: string
+	technologies: string[]
+	github: string
+	live: string
+}
+
+type ProjectsText = {
+	title: string
+	liveDemo: string
+	viewCode: string
+	noProjects: string
+	list?: Project[]
+}
 
 const Projects = () => {
+	const { messages } = useLanguage()
 
-	const projects = [
-		{
-			title: 'E-Commerce Website',
-			description:
-				'A fully responsive e-commerce platform with product filtering and user authentication.',
-			image: '/images/project1.jpg',
-			category: 'web',
-			technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-			github: 'https://github.com',
-			live: 'https://example.com',
-		},
-		{
-			title: 'Portfolio Website',
-			description:
-				'A creative portfolio website with animations and responsive design.',
-			image: '/images/project2.jpg',
-			category: 'web',
-			technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-			github: 'https://github.com',
-			live: 'https://example.com',
-		},
-		{
-			title: 'Weather App',
-			description:
-				'A mobile app that provides real-time weather information using geolocation.',
-			image: '/images/project3.jpg',
-			category: 'mobile',
-			technologies: ['React Native', 'TypeScript', 'Weather API'],
-			github: 'https://github.com',
-			live: 'https://example.com',
-		},
-		{
-			title: 'Brand Identity Design',
-			description:
-				'Complete brand identity including logo, color palette, and brand guidelines.',
-			image: '/images/project4.jpg',
-			category: 'design',
-			technologies: ['Figma', 'Illustrator', 'Photoshop'],
-			github: 'https://github.com',
-			live: 'https://example.com',
-		},
-		{
-			title: 'Task Management App',
-			description:
-				'A productivity app that helps users organize tasks and track progress.',
-			image: '/images/project5.jpg',
-			category: 'web',
-			technologies: ['Vue.js', 'Firebase', 'Vuetify'],
-			github: 'https://github.com',
-			live: 'https://example.com',
-		},
-		{
-			title: 'Restaurant Website',
-			description:
-				'A website for a restaurant with online ordering and reservation capabilities.',
-			image: '/images/project6.jpg',
-			category: 'web',
-			technologies: ['WordPress', 'PHP', 'MySQL', 'Custom Theme'],
-			github: 'https://github.com',
-			live: 'https://example.com',
-		},
-	]
+	const projectsText = (messages.projects || {
+		title: 'My Projects',
+		liveDemo: 'Live Demo',
+		viewCode: 'View Code',
+		noProjects: 'No projects available at the moment.',
+		list: [],
+	}) as ProjectsText
+
+	const projects = projectsText.list || []
+
 	return (
 		<section id="projects" className="py-6 md:py-12 bg-[var(--bg-main)]">
 			<div className="section-container">
-				<h2 className="section-title">Projects</h2>
+				<h2 className="section-title">{projectsText.title}</h2>
 
 				{/* Projects Grid */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-					{projects.map((project, index) => (
+					{projects.map((project: Project, index: number) => (
 						<motion.div
 							key={index}
 							initial={{ opacity: 0, y: 20 }}
@@ -102,34 +71,38 @@ const Projects = () => {
 								</p>
 
 								<div className="flex flex-wrap gap-2 mb-3">
-									{project.technologies.map((tech, techIndex) => (
-										<span
-											key={techIndex}
-											className="px-2 py-0.5 text-xs bg-[var(--bg-tag)] text-[var(--text-primary)] rounded"
-										>
-											{tech}
-										</span>
-									))}
+									{project.technologies.map(
+										(tech: string, techIndex: number) => (
+											<span
+												key={techIndex}
+												className="px-2 py-0.5 text-xs bg-[var(--bg-tag)] text-[var(--text-primary)] rounded"
+											>
+												{tech}
+											</span>
+										)
+									)}
 								</div>
 
-								<div className="flex gap-4">
+								<div className="flex gap-3">
 									<a
 										href={project.github}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="flex items-center gap-1 text-[var(--text-secondary)] hover:text-[var(--primary)] text-sm"
-										aria-label="GitHub Repository"
+										className="flex items-center gap-1 text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
+										aria-label="View GitHub repository"
 									>
-										<FaGithub /> Code
+										<FaGithub size={18} />
+										<span>{projectsText.viewCode}</span>
 									</a>
 									<a
 										href={project.live}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="flex items-center gap-1 text-[var(--text-secondary)] hover:text-[var(--primary)] text-sm"
-										aria-label="Live Demo"
+										className="flex items-center gap-1 text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
+										aria-label="View live demo"
 									>
-										<FaExternalLinkAlt /> Live Demo
+										<BiLinkExternal size={18} />
+										<span>{projectsText.liveDemo}</span>
 									</a>
 								</div>
 							</div>
@@ -138,9 +111,7 @@ const Projects = () => {
 				</div>
 
 				{projects.length === 0 && (
-					<p className="text-center py-6">
-						No projects found in this category.
-					</p>
+					<p className="text-center py-6">{projectsText.noProjects}</p>
 				)}
 			</div>
 		</section>

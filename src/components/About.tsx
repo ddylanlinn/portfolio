@@ -9,14 +9,35 @@ import {
 	FaTools,
 } from 'react-icons/fa'
 import { useState } from 'react'
+import { useLanguage } from '@/context/LanguageContext'
 
-type SkillCategory = 'front-end' | 'back-end' | 'others'
+type SkillCategory = 'frontend' | 'backend' | 'others'
 
 const About = () => {
-	const [activeTab, setActiveTab] = useState<SkillCategory>('front-end')
+	const { messages } = useLanguage()
+	const [activeTab, setActiveTab] = useState<SkillCategory>('frontend')
+
+	const about = messages.about || {
+		title: 'About Me',
+		description1:
+			"I'm a passionate frontend developer with over 5 years of experience creating modern web applications.",
+		description2:
+			'My goal is to build fast, accessible, and user-friendly websites that provide an exceptional user experience.',
+		description3:
+			'I believe in clean code, continuous learning, and staying up-to-date with the latest web technologies and best practices.',
+		cta: 'Get In Touch',
+		skills: {
+			title: 'My Skills',
+			categories: {
+				frontend: 'Frontend',
+				backend: 'Backend',
+				others: 'Others',
+			},
+		},
+	}
 
 	const skillCategories: Record<SkillCategory, string[]> = {
-		'front-end': [
+		frontend: [
 			'HTML / CSS',
 			'JavaScript / TypeScript',
 			'React / Redux / Redux Saga',
@@ -27,7 +48,7 @@ const About = () => {
 			'SEO Improvement',
 			'Performance Optimization',
 		],
-		'back-end': [
+		backend: [
 			'Node.js',
 			'Prisma',
 			'Express / Sequelize',
@@ -74,7 +95,7 @@ const About = () => {
 	return (
 		<section id="about" className="py-6 md:py-12">
 			<div className="section-container">
-				<h2 className="section-title">About Me</h2>
+				<h2 className="section-title">{about.title}</h2>
 
 				<div className="grid md:grid-cols-2 gap-6 items-start">
 					{/* About Text */}
@@ -84,29 +105,12 @@ const About = () => {
 						viewport={{ once: true }}
 						transition={{ duration: 0.5 }}
 					>
-						<p className="text-lg mb-3">
-							I'm a passionate web developer and designer with a keen eye for
-							detail and a love for creating beautiful, functional websites.
-							With several years of experience in web development, I specialize
-							in creating responsive, user-friendly websites that look great on
-							any device.
-						</p>
-						<p className="text-lg mb-3">
-							My journey in web development began when I discovered my passion
-							for combining creativity with technical skills. I've since worked
-							on various projects, from small business websites to complex web
-							applications, always striving to deliver high-quality work that
-							exceeds expectations.
-						</p>
-						<p className="text-lg mb-4">
-							When I'm not coding, you'll find me exploring new design trends,
-							learning new technologies, or enjoying outdoor activities. I
-							believe in continuous learning and am always looking to expand my
-							skill set.
-						</p>
+						<p className="text-lg mb-3">{about.description1}</p>
+						<p className="text-lg mb-3">{about.description2}</p>
+						<p className="text-lg mb-4">{about.description3}</p>
 
 						<a href="#contact" className="button-primary">
-							Let's Work Together
+							{about.cta}
 						</a>
 					</motion.div>
 
@@ -120,32 +124,32 @@ const About = () => {
 							transition={{ duration: 0.5 }}
 							className="bg-[var(--bg-card)] rounded-lg p-4 shadow-sm"
 						>
-							<h3 className="text-2xl font-bold mb-3">My Skills</h3>
+							<h3 className="text-2xl font-bold mb-3">{about.skills.title}</h3>
 
 							{/* Skills Tab Navigation */}
 							<div className="flex mb-4 border-b border-[var(--border-color)]">
 								<button
 									className={`px-4 py-2 font-medium border-b-2 transition-colors ${
-										activeTab === 'front-end'
+										activeTab === 'frontend'
 											? 'border-[var(--primary)] text-[var(--primary)]'
 											: 'border-transparent hover:text-[var(--primary)]'
 									}`}
-									onClick={() => setActiveTab('front-end')}
+									onClick={() => setActiveTab('frontend')}
 								>
 									<span className="flex items-center gap-2">
-										<FaCode /> Front-end
+										<FaCode /> {about.skills.categories.frontend}
 									</span>
 								</button>
 								<button
 									className={`px-4 py-2 font-medium border-b-2 transition-colors ${
-										activeTab === 'back-end'
+										activeTab === 'backend'
 											? 'border-[var(--primary)] text-[var(--primary)]'
 											: 'border-transparent hover:text-[var(--primary)]'
 									}`}
-									onClick={() => setActiveTab('back-end')}
+									onClick={() => setActiveTab('backend')}
 								>
 									<span className="flex items-center gap-2">
-										<FaServer /> Back-end
+										<FaServer /> {about.skills.categories.backend}
 									</span>
 								</button>
 								<button
@@ -157,7 +161,7 @@ const About = () => {
 									onClick={() => setActiveTab('others')}
 								>
 									<span className="flex items-center gap-2">
-										<FaTools /> Others
+										<FaTools /> {about.skills.categories.others}
 									</span>
 								</button>
 							</div>
