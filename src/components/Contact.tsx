@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi'
 import { useLanguage } from '@/context/LanguageContext'
 
 const Contact = () => {
@@ -67,70 +66,26 @@ const Contact = () => {
 		}
 	}
 
-	const contactInfo = [
-		{
-			icon: <FiMail size={20} />,
-			title: contact.info.email,
-			content: 'contact@example.com',
-			href: 'mailto:contact@example.com',
-		},
-		{
-			icon: <FiPhone size={20} />,
-			title: contact.info.phone,
-			content: '+1 234 567 890',
-			href: 'tel:+1234567890',
-		},
-		{
-			icon: <FiMapPin size={20} />,
-			title: contact.info.location,
-			content: 'San Francisco, CA',
-			href: 'https://maps.google.com/?q=San+Francisco',
-		},
-	]
-
 	return (
 		<section id="contact" className="py-6 md:py-12">
 			<div className="section-container">
 				<h2 className="section-title">{contact.title}</h2>
 
-				<div className="grid md:grid-cols-2 gap-6">
+				<div className="space-y-6">
 					{/* Contact Information */}
 					<motion.div
-						initial={{ opacity: 0, x: -20 }}
-						whileInView={{ opacity: 1, x: 0 }}
+						initial={{ opacity: 0, y: -20 }}
+						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.5 }}
 					>
 						<p className="text-lg mb-4">{contact.description}</p>
-
-						<div className="space-y-3">
-							{contactInfo.map((info, index) => (
-								<div key={index} className="flex items-start gap-3">
-									<div className="p-2 bg-[var(--bg-tag)] rounded-full text-[var(--primary)]">
-										{info.icon}
-									</div>
-									<div>
-										<h3 className="font-semibold text-[var(--text-primary)]">
-											{info.title}
-										</h3>
-										<a
-											href={info.href}
-											className="text-[var(--text-secondary)] hover:text-[var(--primary)] cursor-pointer"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											{info.content}
-										</a>
-									</div>
-								</div>
-							))}
-						</div>
 					</motion.div>
 
 					{/* Contact Form */}
 					<motion.div
-						initial={{ opacity: 0, x: 20 }}
-						whileInView={{ opacity: 1, x: 0 }}
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						transition={{ duration: 0.5 }}
 					>

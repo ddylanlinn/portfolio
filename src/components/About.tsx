@@ -71,26 +71,6 @@ const About = () => {
 		],
 	}
 
-	const services = [
-		{
-			title: 'Web Development',
-			description:
-				'Building fast, responsive, and modern websites using the latest technologies.',
-			icon: <FaCode size={28} className="text-[var(--primary)]" />,
-		},
-		{
-			title: 'Web Design',
-			description:
-				'Creating beautiful and intuitive user interfaces with a focus on usability.',
-			icon: <FaPaintBrush size={28} className="text-[var(--primary)]" />,
-		},
-		{
-			title: 'Mobile Responsive',
-			description:
-				'Ensuring websites look and function perfectly on all devices and screen sizes.',
-			icon: <FaMobileAlt size={28} className="text-[var(--primary)]" />,
-		},
-	]
 
 	return (
 		<section id="about" className="py-6 md:py-12">

@@ -44,7 +44,7 @@ const Projects = () => {
 				<h2 className="section-title">{projectsText.title}</h2>
 
 				{/* Projects Grid */}
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 					{projects.map((project: Project, index: number) => (
 						<motion.div
 							key={index}
@@ -83,28 +83,6 @@ const Projects = () => {
 									)}
 								</div>
 
-								<div className="flex gap-3">
-									<a
-										href={project.github}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="flex items-center gap-1 text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
-										aria-label="View GitHub repository"
-									>
-										<FaGithub size={18} />
-										<span>{projectsText.viewCode}</span>
-									</a>
-									<a
-										href={project.live}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="flex items-center gap-1 text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
-										aria-label="View live demo"
-									>
-										<BiLinkExternal size={18} />
-										<span>{projectsText.liveDemo}</span>
-									</a>
-								</div>
 							</div>
 						</motion.div>
 					))}
