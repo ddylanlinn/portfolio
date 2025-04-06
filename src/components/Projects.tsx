@@ -6,9 +6,6 @@ import { motion } from 'framer-motion'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
 const Projects = () => {
-	const [activeFilter, setActiveFilter] = useState('all')
-
-	const categories = ['all', 'web', 'mobile', 'design']
 
 	const projects = [
 		{
@@ -72,37 +69,14 @@ const Projects = () => {
 			live: 'https://example.com',
 		},
 	]
-
-	const filteredProjects =
-		activeFilter === 'all'
-			? projects
-			: projects.filter((project) => project.category === activeFilter)
-
 	return (
 		<section id="projects" className="py-6 md:py-12 bg-[var(--bg-main)]">
 			<div className="section-container">
-				<h2 className="section-title">My Projects</h2>
-
-				{/* Filter Buttons */}
-				<div className="flex flex-wrap justify-center sm:justify-start gap-2 mb-6">
-					{categories.map((category) => (
-						<button
-							key={category}
-							onClick={() => setActiveFilter(category)}
-							className={`px-4 py-2 rounded-full capitalize transition-colors ${
-								activeFilter === category
-									? 'bg-[var(--primary)] text-white'
-									: 'bg-[var(--bg-tag)] hover:bg-[var(--bg-tag-hover)]'
-							}`}
-						>
-							{category}
-						</button>
-					))}
-				</div>
+				<h2 className="section-title">Projects</h2>
 
 				{/* Projects Grid */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-					{filteredProjects.map((project, index) => (
+					{projects.map((project, index) => (
 						<motion.div
 							key={index}
 							initial={{ opacity: 0, y: 20 }}
@@ -163,7 +137,7 @@ const Projects = () => {
 					))}
 				</div>
 
-				{filteredProjects.length === 0 && (
+				{projects.length === 0 && (
 					<p className="text-center py-6">
 						No projects found in this category.
 					</p>
