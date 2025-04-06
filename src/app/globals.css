@@ -2,40 +2,68 @@
 @tailwind utilities;
 
 :root {
+	/* Primary Colors */
 	--primary: #ff6b6b;
 	--primary-hover: #ff5252;
 	--primary-light: #ffeded;
+
+	/* Secondary Colors */
 	--secondary: #4ecdc4;
-	--background: #f7f7f7;
-	--text: #333333;
-	--text-light: #666666;
+
+	/* Background Colors */
+	--bg-main: #ffffff;
+	--bg-card: #ffffff;
+	--bg-tag: #f0f0f0;
+	--bg-tag-hover: #e0e0e0;
+	--bg-input: #ffffff;
+	--bg-footer: #f8f8f8;
+
+	/* Text Colors */
+	--text-primary: #333333;
+	--text-secondary: #666666;
+
+	/* Border Colors */
+	--border-color: #e0e0e0;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--primary: #ff8787;
-		--primary-hover: #ff7070;
-		--primary-light: #3d2626;
-		--secondary: #66e0d7;
-		--background: #121212;
-		--text: #f7f7f7;
-		--text-light: #cccccc;
-	}
+.dark {
+	/* Primary Colors - unchanged */
+	--primary: #ff8787;
+	--primary-hover: #ff7070;
+	--primary-light: #3d2626;
+
+	/* Secondary Colors */
+	--secondary: #66e0d7;
+
+	/* Background Colors - changing from blue to dark gray */
+	--bg-main: #222222; /* Dark gray instead of #1e3a8a */
+	--bg-card: #2a2a2a; /* Slightly lighter dark gray instead of #1e3a8a */
+	--bg-tag: #333333; /* Gray for tags instead of #2a4494 */
+	--bg-tag-hover: #444444; /* Lighter gray for hover instead of #3a54a4 */
+	--bg-input: #2a2a2a; /* Same as card background instead of #1e3a8a */
+	--bg-footer: #222222; /* Same as main background instead of #1e3a8a */
+
+	/* Text Colors - unchanged */
+	--text-primary: #f7f7f7;
+	--text-secondary: #cccccc;
+
+	/* Border Colors */
+	--border-color: #444444; /* Dark gray border instead of #2a4494 */
 }
 
 @layer base {
 	body {
-		@apply bg-[var(--background)] text-[var(--text)];
+		@apply bg-[var(--bg-main)] text-[var(--text-primary)];
 	}
 }
 
 @layer utilities {
 	.section-container {
-		@apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+		@apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-12;
 	}
 
 	.section-title {
-		@apply text-3xl md:text-4xl font-bold mb-8 text-center sm:text-left;
+		@apply text-3xl md:text-4xl font-bold mb-4 text-center sm:text-left;
 	}
 
 	.nav-link {
@@ -43,10 +71,10 @@
 	}
 
 	.button-primary {
-		@apply bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-white px-6 py-3 rounded-lg font-medium transition-all;
+		@apply bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-white px-5 py-2 rounded-lg font-medium transition-all;
 	}
 
 	.button-outline {
-		@apply border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary-light)] px-6 py-3 rounded-lg font-medium transition-all;
+		@apply border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary-light)] px-5 py-2 rounded-lg font-medium transition-all;
 	}
 }

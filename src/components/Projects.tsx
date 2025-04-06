@@ -79,15 +79,12 @@ const Projects = () => {
 			: projects.filter((project) => project.category === activeFilter)
 
 	return (
-		<section
-			id="projects"
-			className="py-16 md:py-24 bg-gray-50 dark:bg-gray-800"
-		>
+		<section id="projects" className="py-6 md:py-12 bg-[var(--bg-main)]">
 			<div className="section-container">
 				<h2 className="section-title">My Projects</h2>
 
 				{/* Filter Buttons */}
-				<div className="flex flex-wrap justify-center sm:justify-start gap-2 mb-10">
+				<div className="flex flex-wrap justify-center sm:justify-start gap-2 mb-6">
 					{categories.map((category) => (
 						<button
 							key={category}
@@ -95,7 +92,7 @@ const Projects = () => {
 							className={`px-4 py-2 rounded-full capitalize transition-colors ${
 								activeFilter === category
 									? 'bg-[var(--primary)] text-white'
-									: 'bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600'
+									: 'bg-[var(--bg-tag)] hover:bg-[var(--bg-tag-hover)]'
 							}`}
 						>
 							{category}
@@ -104,7 +101,7 @@ const Projects = () => {
 				</div>
 
 				{/* Projects Grid */}
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 					{filteredProjects.map((project, index) => (
 						<motion.div
 							key={index}
@@ -112,9 +109,9 @@ const Projects = () => {
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
 							transition={{ duration: 0.5, delay: index * 0.1 }}
-							className="bg-white dark:bg-gray-900 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+							className="bg-[var(--bg-card)] rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
 						>
-							<div className="relative h-48 w-full">
+							<div className="relative h-40 w-full">
 								<Image
 									src={project.image}
 									alt={project.title}
@@ -122,17 +119,19 @@ const Projects = () => {
 									style={{ objectFit: 'cover' }}
 								/>
 							</div>
-							<div className="p-6">
-								<h3 className="text-xl font-bold mb-2">{project.title}</h3>
-								<p className="text-[var(--text-light)] mb-4">
+							<div className="p-4">
+								<h3 className="text-xl font-bold mb-1 text-[var(--text-primary)]">
+									{project.title}
+								</h3>
+								<p className="text-[var(--text-secondary)] mb-3 text-sm">
 									{project.description}
 								</p>
 
-								<div className="flex flex-wrap gap-2 mb-4">
+								<div className="flex flex-wrap gap-2 mb-3">
 									{project.technologies.map((tech, techIndex) => (
 										<span
 											key={techIndex}
-											className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded"
+											className="px-2 py-0.5 text-xs bg-[var(--bg-tag)] text-[var(--text-primary)] rounded"
 										>
 											{tech}
 										</span>
@@ -144,7 +143,7 @@ const Projects = () => {
 										href={project.github}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="flex items-center gap-1 text-[var(--text-light)] hover:text-[var(--primary)]"
+										className="flex items-center gap-1 text-[var(--text-secondary)] hover:text-[var(--primary)] text-sm"
 										aria-label="GitHub Repository"
 									>
 										<FaGithub /> Code
@@ -153,7 +152,7 @@ const Projects = () => {
 										href={project.live}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="flex items-center gap-1 text-[var(--text-light)] hover:text-[var(--primary)]"
+										className="flex items-center gap-1 text-[var(--text-secondary)] hover:text-[var(--primary)] text-sm"
 										aria-label="Live Demo"
 									>
 										<FaExternalLinkAlt /> Live Demo
@@ -165,7 +164,7 @@ const Projects = () => {
 				</div>
 
 				{filteredProjects.length === 0 && (
-					<p className="text-center py-10">
+					<p className="text-center py-6">
 						No projects found in this category.
 					</p>
 				)}

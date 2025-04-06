@@ -67,11 +67,11 @@ const Contact = () => {
 	]
 
 	return (
-		<section id="contact" className="py-16 md:py-24">
+		<section id="contact" className="py-6 md:py-12">
 			<div className="section-container">
 				<h2 className="section-title">Get In Touch</h2>
 
-				<div className="grid md:grid-cols-2 gap-12">
+				<div className="grid md:grid-cols-2 gap-6">
 					{/* Contact Information */}
 					<motion.div
 						initial={{ opacity: 0, x: -20 }}
@@ -79,23 +79,25 @@ const Contact = () => {
 						viewport={{ once: true }}
 						transition={{ duration: 0.5 }}
 					>
-						<p className="text-lg mb-8">
+						<p className="text-lg mb-4">
 							I'm interested in freelance opportunities and collaborations. If
 							you have a project that needs my expertise, or if you just want to
 							say hi, feel free to reach out!
 						</p>
 
-						<div className="space-y-6">
+						<div className="space-y-3">
 							{contactInfo.map((info, index) => (
-								<div key={index} className="flex items-start gap-4">
-									<div className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full text-[var(--primary)]">
+								<div key={index} className="flex items-start gap-3">
+									<div className="p-2 bg-[var(--bg-tag)] rounded-full text-[var(--primary)]">
 										{info.icon}
 									</div>
 									<div>
-										<h3 className="font-semibold">{info.title}</h3>
+										<h3 className="font-semibold text-[var(--text-primary)]">
+											{info.title}
+										</h3>
 										<a
 											href={info.href}
-											className="text-[var(--text-light)] hover:text-[var(--primary)]"
+											className="text-[var(--text-secondary)] hover:text-[var(--primary)]"
 											target="_blank"
 											rel="noopener noreferrer"
 										>
@@ -114,11 +116,11 @@ const Contact = () => {
 						viewport={{ once: true }}
 						transition={{ duration: 0.5 }}
 					>
-						<form onSubmit={handleSubmit} className="space-y-4">
+						<form onSubmit={handleSubmit} className="space-y-3">
 							<div>
 								<label
 									htmlFor="name"
-									className="block text-sm font-medium mb-1"
+									className="block text-sm font-medium mb-1 text-[var(--text-primary)]"
 								>
 									Name
 								</label>
@@ -129,14 +131,14 @@ const Contact = () => {
 									value={formData.name}
 									onChange={handleChange}
 									required
-									className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent dark:bg-gray-800"
+									className="w-full px-3 py-2 border border-[var(--border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent bg-[var(--bg-input)]"
 								/>
 							</div>
 
 							<div>
 								<label
 									htmlFor="email"
-									className="block text-sm font-medium mb-1"
+									className="block text-sm font-medium mb-1 text-[var(--text-primary)]"
 								>
 									Email
 								</label>
@@ -147,14 +149,14 @@ const Contact = () => {
 									value={formData.email}
 									onChange={handleChange}
 									required
-									className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent dark:bg-gray-800"
+									className="w-full px-3 py-2 border border-[var(--border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent bg-[var(--bg-input)]"
 								/>
 							</div>
 
 							<div>
 								<label
 									htmlFor="subject"
-									className="block text-sm font-medium mb-1"
+									className="block text-sm font-medium mb-1 text-[var(--text-primary)]"
 								>
 									Subject
 								</label>
@@ -165,14 +167,14 @@ const Contact = () => {
 									value={formData.subject}
 									onChange={handleChange}
 									required
-									className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent dark:bg-gray-800"
+									className="w-full px-3 py-2 border border-[var(--border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent bg-[var(--bg-input)]"
 								/>
 							</div>
 
 							<div>
 								<label
 									htmlFor="message"
-									className="block text-sm font-medium mb-1"
+									className="block text-sm font-medium mb-1 text-[var(--text-primary)]"
 								>
 									Message
 								</label>
@@ -181,9 +183,9 @@ const Contact = () => {
 									name="message"
 									value={formData.message}
 									onChange={handleChange}
-									rows={5}
+									rows={4}
 									required
-									className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent dark:bg-gray-800"
+									className="w-full px-3 py-2 border border-[var(--border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent bg-[var(--bg-input)]"
 								/>
 							</div>
 

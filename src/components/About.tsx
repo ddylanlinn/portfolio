@@ -41,11 +41,11 @@ const About = () => {
 	]
 
 	return (
-		<section id="about" className="py-16 md:py-24">
+		<section id="about" className="py-6 md:py-12">
 			<div className="section-container">
 				<h2 className="section-title">About Me</h2>
 
-				<div className="grid md:grid-cols-2 gap-12 items-start">
+				<div className="grid md:grid-cols-2 gap-6 items-start">
 					{/* About Text */}
 					<motion.div
 						initial={{ opacity: 0, x: -20 }}
@@ -53,21 +53,21 @@ const About = () => {
 						viewport={{ once: true }}
 						transition={{ duration: 0.5 }}
 					>
-						<p className="text-lg mb-6">
+						<p className="text-lg mb-3">
 							I'm a passionate web developer and designer with a keen eye for
 							detail and a love for creating beautiful, functional websites.
 							With several years of experience in web development, I specialize
 							in creating responsive, user-friendly websites that look great on
 							any device.
 						</p>
-						<p className="text-lg mb-6">
+						<p className="text-lg mb-3">
 							My journey in web development began when I discovered my passion
 							for combining creativity with technical skills. I've since worked
 							on various projects, from small business websites to complex web
 							applications, always striving to deliver high-quality work that
 							exceeds expectations.
 						</p>
-						<p className="text-lg mb-8">
+						<p className="text-lg mb-4">
 							When I'm not coding, you'll find me exploring new design trends,
 							learning new technologies, or enjoying outdoor activities. I
 							believe in continuous learning and am always looking to expand my
@@ -80,7 +80,7 @@ const About = () => {
 					</motion.div>
 
 					{/* Skills and Services */}
-					<div className="space-y-10">
+					<div className="space-y-4">
 						{/* Skills */}
 						<motion.div
 							initial={{ opacity: 0, x: 20 }}
@@ -88,12 +88,12 @@ const About = () => {
 							viewport={{ once: true }}
 							transition={{ duration: 0.5 }}
 						>
-							<h3 className="text-2xl font-bold mb-4">My Skills</h3>
+							<h3 className="text-2xl font-bold mb-2">My Skills</h3>
 							<div className="flex flex-wrap gap-2">
 								{skills.map((skill, index) => (
 									<span
 										key={index}
-										className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm"
+										className="px-3 py-1 bg-[var(--bg-tag)] rounded-full text-sm text-[var(--text-primary)]"
 									>
 										{skill}
 									</span>
@@ -108,14 +108,14 @@ const About = () => {
 							viewport={{ once: true }}
 							transition={{ duration: 0.5, delay: 0.2 }}
 						>
-							<h3 className="text-2xl font-bold mb-4">Services I Offer</h3>
-							<div className="space-y-4">
+							<h3 className="text-2xl font-bold mb-2">Services I Offer</h3>
+							<div className="space-y-3">
 								{services.map((service, index) => (
-									<div key={index} className="flex gap-4 items-start">
+									<div key={index} className="flex gap-3 items-start">
 										<div className="mt-1">{service.icon}</div>
 										<div>
 											<h4 className="text-xl font-semibold">{service.title}</h4>
-											<p className="text-[var(--text-light)]">
+											<p className="text-[var(--text-secondary)]">
 												{service.description}
 											</p>
 										</div>
