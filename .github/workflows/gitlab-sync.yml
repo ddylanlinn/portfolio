@@ -1,0 +1,43 @@
+name: GitLab Sync
+
+on:
+  # Manual trigger
+  workflow_dispatch:
+    inputs:
+      gitlab_branch:
+        description: 'GitLab branch to sync'
+        required: true
+        default: 'main'
+        type: string
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+      - name: Add GitLab remote
+        run: |
+          # Replace with your GitLab repo URL (use access token or SSH URL if private)
+          git remote add gitlab ${{ secrets.GITLAB_REPO_URL }}
+          git fetch gitlab
+
+      - name: Merge GitLab changes
+        run: |
+          git checkout ${{ github.event.inputs.gitlab_branch || 'main' }}
+          git merge gitlab/${{ github.event.inputs.gitlab_branch || 'main' }} --allow-unrelated-histories
+          git push origin ${{ github.event.inputs.gitlab_branch || 'main' }}
+
+      - name: Trigger deployment workflow
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          event-type: deploy-request
+          token: ${{ secrets.GITHUB_TOKEN }}
