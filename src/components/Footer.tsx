@@ -6,6 +6,7 @@ const Footer = () => {
 	const links = [
 		{ name: 'Home', href: '#home' },
 		{ name: 'About', href: '#about' },
+		{ name: 'Experience', href: '#experience' },
 		{ name: 'Projects', href: '#projects' },
 		{ name: 'Contact', href: '#contact' },
 	]
@@ -35,7 +36,7 @@ const Footer = () => {
 					{/* Logo and Tagline */}
 					<div>
 						<h2 className="text-xl font-bold text-[var(--primary)]">
-							Your Name
+							Dylan
 						</h2>
 						<p className="mt-1 text-[var(--text-secondary)]">
 							Creating beautiful digital experiences
@@ -84,7 +85,7 @@ const Footer = () => {
 				</div>
 
 				<div className="border-t border-[var(--border-color)] mt-6 pt-6 text-center text-[var(--text-secondary)]">
-					<p>&copy; {currentYear} Your Name. All rights reserved.</p>
+					<p>&copy; {currentYear} Dylan. All rights reserved.</p>
 				</div>
 			</div>
 		</footer>

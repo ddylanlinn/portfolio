@@ -22,7 +22,7 @@ const Hero = () => {
 					>
 						<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-3">
 							Hello, I'm{' '}
-							<span className="text-[var(--primary)]">Your Name</span>
+							<span className="text-[var(--primary)]">Dylan CH Lin</span>
 						</h1>
 						<h2 className="text-lg sm:text-xl text-[var(--text-secondary)] mb-4">
 							Web Developer & Designer
@@ -82,7 +82,7 @@ const Hero = () => {
 						<div className="relative w-60 h-60 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-[var(--primary)]">
 							<Image
 								src="/images/profile.jpg"
-								alt="Your Name"
+								alt="Dylan CH Lin"
 								fill
 								style={{ objectFit: 'cover' }}
 								priority
