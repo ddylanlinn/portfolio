@@ -8,8 +8,8 @@
 	},
 	"hero": {
 		"greeting": "Hello, I'm",
-		"title": "Web Developer & Designer",
-		"description": "I create beautiful, responsive websites with a focus on user experience. Let's collaborate to bring your ideas to life.",
+		"title": "Full Stack Developer",
+		"description": "I create efficient, robust applications with a focus on user experience and system optimization.",
 		"cta": {
 			"contact": "Get In Touch",
 			"projects": "View Projects"
@@ -18,12 +18,21 @@
 	},
 	"about": {
 		"title": "About Me",
-		"description1": "I'm a passionate web developer and designer with a keen eye for detail and a love for creating beautiful, functional websites. With several years of experience in web development, I specialize in creating responsive, user-friendly websites that look great on any device.",
-		"description2": "My journey in web development began when I discovered my passion for combining creativity with technical skills. I've since worked on various projects, from small business websites to complex web applications, always striving to deliver high-quality work that exceeds expectations.",
-		"description3": "When I'm not coding, you'll find me exploring new design trends, learning new technologies, or enjoying outdoor activities. I believe in continuous learning and am always looking to expand my skill set.",
+		"description": [
+			"With extensive full-stack development experience, I focus on front-end technologies and system optimization, dedicated to building efficient workflows and exceptional user experiences. Proficient in React, Next.js, Node.js, and other modern technologies, I'm skilled in state management, CI/CD, automated deployment, and system monitoring, with the ability to design modular, scalable systems.",
+			"I've developed internal no-code platforms using YAML-driven configurations and drag-and-drop interfaces to help cross-department teams quickly build admin dashboards. This project successfully improved development efficiency by over 70% while significantly reducing redundant work and maintenance costs, continuously optimizing collaboration experiences and development stability.",
+			"I prioritize user-centered development, constantly improving system interaction logic, page performance, and user experience. Beyond solving technical challenges, I focus on process and interpersonal collaboration quality, passionate about technical innovation, knowledge sharing, and architectural thinking, committed to creating long-term maintainable, growth-oriented value for teams and products."
+		],
 		"cta": "Let's Work Together",
+		"education": {
+			"title": "Education",
+			"list": [
+				"Tamkang University, Department of Information Management",
+				"Graduated in 2015"
+			]
+		},
 		"skills": {
-			"title": "My Skills",
+			"title": "Skills",
 			"categories": {
 				"frontend": "Front-end",
 				"backend": "Back-end",
@@ -39,13 +48,14 @@
 			{
 				"company": "Tech Innovations Inc.",
 				"logo": "/images/company1.jpg",
-				"title": "Senior Frontend Developer",
-				"period": "Jan 2022 - Present",
+				"title": "Software Developer",
+				"period": "Aug 2023 - Present",
 				"description": [
-					"Led the development of the company's flagship SaaS product using React, NextJS, and TypeScript.",
-					"Implemented CI/CD pipelines and improved application performance by 40%.",
-					"Collaborated with UX designers to create intuitive and accessible user interfaces.",
-					"Mentored junior developers and conducted code reviews to ensure high code quality."
+					"Collaborated closely with design, mobile, and backend teams on 5+ WebView development projects to ensure successful product delivery.",
+					"Developed and designed internal NPM packages (such as tracking tools, version management) to improve company development efficiency and collaboration experience.",
+					"Responsible for admin system development and maintenance, creating a less-code to no-code platform using YAML configuration, successfully establishing 117 admin projects, significantly reducing development workload and enhancing business self-service capabilities.",
+					"Established monitoring and performance measurement mechanisms to improve system stability and observability.",
+					"Coordinated cross-team collaboration, integrated and standardized company R&D standards and use cases, improving development efficiency and product iteration speed."
 				],
 				"technologies": [
 					"React",
@@ -53,20 +63,20 @@
 					"TypeScript",
 					"Redux",
 					"Tailwind CSS",
-					"GraphQL",
 					"AWS"
 				]
 			},
 			{
 				"company": "Digital Solutions Group",
 				"logo": "/images/company2.jpg",
-				"title": "Full Stack Developer",
-				"period": "Mar 2019 - Dec 2021",
+				"title": "Frontend Developer",
+				"period": "Nov 2021 - Aug 2023",
 				"description": [
-					"Developed and maintained multiple web applications for clients in the finance and healthcare sectors.",
-					"Built RESTful APIs using Node.js, Express, and integrated with various database systems.",
-					"Implemented responsive designs and ensured cross-browser compatibility.",
-					"Participated in agile development processes and sprint planning."
+					"Led and managed the web frontend team, ensuring they had sufficient technical expertise and resources to complete tasks.",
+					"Collaborated closely with the design department, mobile, and backend teams to ensure smooth product development from design to launch.",
+					"Participated in architecture design, pursuing more efficient and secure logic separation, maintaining code readability, maintainability, and scalability.",
+					"Optimized website performance, enhancing user experience and efficiency.",
+					"Implemented TypeScript, CI/CD, unit and integration testing, and was responsible for deployment, while promoting optimization tools and processes within the team."
 				],
 				"technologies": [
 					"JavaScript",
@@ -79,15 +89,16 @@
 				]
 			},
 			{
-				"company": "Creative Web Studios",
+				"company": "Lidemy Programming Bootcamp",
 				"logo": "/images/company3.jpg",
 				"title": "Frontend Developer",
-				"period": "Jun 2017 - Feb 2019",
+				"period": "Jan 2021 - Nov 2021",
 				"description": [
-					"Created responsive web interfaces for e-commerce and corporate clients.",
-					"Collaborated with the design team to implement pixel-perfect UI designs.",
-					"Optimized website performance and implemented SEO best practices.",
-					"Assisted in transitioning the company's development workflow to use modern JavaScript frameworks."
+					"Participated in high-intensity full-stack development training, investing 50+ hours weekly, deeply learning front-end and back-end technologies, system design, and project development, cultivating independent problem-solving and team collaboration abilities.",
+					"Proficient in HTML/CSS/JavaScript, capable of developing responsive web pages and API integration.",
+					"Mastered Node.js for RESTful API design, and proficient in React and state management, capable of independently developing and maintaining projects.",
+					"Familiar with Git Flow version control, with AWS/GCP deployment and operations experience.",
+					"Served as Project Owner, responsible for product development and team management."
 				],
 				"technologies": [
 					"HTML5",
@@ -108,8 +119,11 @@
 		"noProjects": "No projects found in this category.",
 		"list": [
 			{
-				"title": "E-Commerce Website",
-				"description": "A fully responsive e-commerce platform with product filtering and user authentication.",
+				"title": "Backend Management System Development Platform",
+				"description": [
+					"Provided a unified backend management system for various departments within the company, addressing diverse backend needs. The platform uses standardized template code and drag-and-drop interface design to quickly generate backend systems with consistent formatting. The system includes built-in login and permission management features, improving management efficiency.",
+					"Used MySQL combined with Blitz.js and Prisma for data management. The system integrates Entra for authentication and role-based access, ensuring security and user management convenience. Customized proxy solutions to address verification signing, cross-domain access, and system monitoring requirements. Used YAML configuration definitions to solve specification uniformity and template generation conflicts, enhancing system flexibility and maintainability."
+				],
 				"image": "/images/project1.jpg",
 				"category": "web",
 				"technologies": ["React", "Node.js", "MongoDB", "Express"],
@@ -117,8 +131,11 @@
 				"live": "https://example.com"
 			},
 			{
-				"title": "Portfolio Website",
-				"description": "A creative portfolio website with animations and responsive design.",
+				"title": "LINE BOT Personal Assistant",
+				"description": [
+					"Developed a personalized LINE chatbot providing users with automated tracking and notification services, allowing users to set up personalized information tracking and reminder functions through a simple dialogue interface.",
+					"The backend system uses Node.js and TypeScript, utilizing LINE Messaging API to design intuitive interactive interfaces. Implemented scheduling systems supporting customizable notification frequencies, enhancing user experience and system stability."
+				],
 				"image": "/images/project2.jpg",
 				"category": "web",
 				"technologies": ["Next.js", "Tailwind CSS", "Framer Motion"],
@@ -126,38 +143,37 @@
 				"live": "https://example.com"
 			},
 			{
-				"title": "Weather App",
-				"description": "A mobile app that provides real-time weather information using geolocation.",
+				"title": "Labfront Medical Research Data Integration Platform",
+				"description": [
+					"Utilized smart wearable devices to remotely collect physiological data, allowing researchers to track and manage participants' progress, and aggregate and analyze data through a cloud platform, providing the medical industry with more efficient data collection and management solutions.",
+					"Served as Frontend Team Lead, planning and coordinating frontend architecture based on React, with Redux Saga for state management, responsible for AWS deployment, establishing CI/CD workflows, ensuring system stability and development efficiency, while implementing TypeScript, automated testing, and real-time monitoring to improve system maintainability and user experience."
+				],
 				"image": "/images/project3.jpg",
-				"category": "mobile",
-				"technologies": ["React Native", "TypeScript", "Weather API"],
+				"category": "web",
+				"technologies": ["React", "TypeScript", "Weather API"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
 			{
-				"title": "Brand Identity Design",
-				"description": "Complete brand identity including logo, color palette, and brand guidelines.",
+				"title": "Personal Blog & Portfolio",
+				"description": [
+					"Used Next.js with Tailwind CSS to create an efficient, responsive personal blog, providing optimized frontend performance and user experience. Enhanced loading speed and SEO performance through SSG and ISR, ensuring content is timely and scalable. Implemented CDN and automated deployment on Vercel & GitHub Pages, achieving high availability and CI/CD workflow."
+				],
 				"image": "/images/project4.jpg",
-				"category": "design",
-				"technologies": ["Figma", "Illustrator", "Photoshop"],
+				"category": "web",
+				"technologies": ["Next.js", "Tailwind CSS", "Framer Motion"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
 			{
-				"title": "Task Management App",
-				"description": "A productivity app that helps users organize tasks and track progress.",
+				"title": "Wander Map Hiking Forum",
+				"description": [
+					"Served as project initiator, collaborating with a five-person team responsible for frontend and backend development and integration, creating a Taiwanese hiking information and community exchange platform. Using interactive map search as the core feature, providing route maps, coordinates, real-time weather information for hundreds of trails, and integrating membership systems allowing users to share experiences and post comments, building an open outdoor itinerary exchange platform.",
+					"Frontend uses React, providing a smooth interactive experience; backend uses Node.js (Express) with MySQL, ensuring efficient data processing; system deployed on AWS, featuring high availability and scalable architecture, using RESTful API to ensure good system maintenance and extensibility."
+				],
 				"image": "/images/project5.jpg",
 				"category": "web",
-				"technologies": ["Vue.js", "Firebase", "Vuetify"],
-				"github": "https://github.com",
-				"live": "https://example.com"
-			},
-			{
-				"title": "Restaurant Website",
-				"description": "A website for a restaurant with online ordering and reservation capabilities.",
-				"image": "/images/project6.jpg",
-				"category": "web",
-				"technologies": ["WordPress", "PHP", "MySQL", "Custom Theme"],
+				"technologies": ["React", "Node.js", "MySQL", "Express"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			}

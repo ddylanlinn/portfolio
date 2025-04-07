@@ -85,10 +85,8 @@ const Experience = () => {
 								<div className="border-t border-[var(--border-color)] mt-4 pt-4">
 									<div className="space-y-2 mb-4">
 										{exp.description.map((desc: string, i: number) => (
-											<div key={i} className="flex gap-2">
-												<span className="text-[var(--primary)] mt-1 flex-shrink-0">
-													•
-												</span>
+											<div key={i} className="flex items-baseline gap-3">
+												<span className="text-[var(--primary)] flex-shrink-0 inline-block w-2 h-2 rounded-full bg-[var(--primary)]" />
 												<p className="text-[var(--text-secondary)]">{desc}</p>
 											</div>
 										))}

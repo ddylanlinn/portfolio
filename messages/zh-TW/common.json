@@ -18,10 +18,16 @@
 	},
 	"about": {
 		"title": "關於我",
-		"description1": "具備全端開發經驗，專注於前端技術與系統優化，擁有多端協作與高效能開發經驗。",
-		"description2": "熟悉 React、Next.js、Node.js 並擅長狀態管理、CI/CD、部署與系統監控。",
-		"description3": "開發設計內部開發平台、套件建置、後台管理系統等，提升企業開發效率與產品穩定性。熱衷於技術創新與最佳化，持續優化開發流程，提升用戶體驗與系統可維護性。",
+		"description": [
+			"具備全端開發經驗，專注於前端技術與系統優化，致力於打造高效穩定的開發流程與卓越的用戶體驗。擅長使用 React、Next.js、Node.js 等現代技術，熟悉狀態管理、CI/CD、自動化部署與系統監控，具備設計模組化、可擴展系統的能力。",
+			"開發企業內部 no-code 平台建置，透過 YAML 驅動配置與畫面拖拉設計，協助跨部門成員快速建立後台頁面。此專案成功提升開發效率超過 70%，並大幅減少重工與維運成本，持續優化協作體驗與開發穩定性。",
+			"重視從用戶角度出發進行開發，持續優化系統互動邏輯、頁面效能與使用者體驗。除了解決技術問題，也關注流程與人之間的協作品質，熱衷於技術創新、知識分享與架構思維，致力於為團隊與產品創造長期可維護、可成長的價值。"
+		],
 		"cta": "一起合作吧",
+		"education": {
+			"title": "教育背景",
+			"list": ["淡江大學 資訊管理學系", "畢業於 2015 年"]
+		},
 		"skills": {
 			"title": "技能",
 			"categories": {
@@ -111,7 +117,10 @@
 		"list": [
 			{
 				"title": "後台管理系統開發平台",
-				"description": "為公司內部各部門提供統一的後台管理系統，解決多樣化的後台需求。平台透過標準化的模板代碼和拖拉式介面設計，快速生成後台系統，並確保格式一致性。系統內建人員登入與權限管理功能，提升管理效率。\n 使用 MySQL 結合 Blitz.js 和 Prisma 進行數據管理。系統整合 Entra 進行身份驗證與角色存取，確保安全性與用戶管理的便捷性。自定義 proxy 以解決驗簽、跨網域存取及系統監控的需求。使用 YAML 定義配置解決規格統一與模板生成衝突等挑戰，提升系統的靈活性與可維護性。",
+				"description": [
+					"為公司內部各部門提供統一的後台管理系統，解決多樣化的後台需求。平台透過標準化的模板代碼和拖拉式介面設計，快速生成後台系統，並確保格式一致性。系統內建人員登入與權限管理功能，提升管理效率。",
+					"使用 MySQL 結合 Blitz.js 和 Prisma 進行數據管理。系統整合 Entra 進行身份驗證與角色存取，確保安全性與用戶管理的便捷性。自定義 proxy 以解決驗簽、跨網域存取及系統監控的需求。使用 YAML 定義配置解決規格統一與模板生成衝突等挑戰，提升系統的靈活性與可維護性。"
+				],
 				"image": "/images/project1.jpg",
 				"category": "web",
 				"technologies": ["React", "Node.js", "MongoDB", "Express"],
@@ -119,8 +128,11 @@
 				"live": "https://example.com"
 			},
 			{
-				"title": "作品集網站",
-				"description": "具有動畫效果和響應式設計的創意作品集網站。",
+				"title": "LINE BOT 個人化助理",
+				"description": [
+					"開發個人化 LINE 聊天機器人，提供使用者自動追蹤與通知服務，讓用戶能透過簡單的對話介面設定個人化的資訊追蹤與提醒功能。",
+					"後端系統系統採用 Node.js 與 TypeScript，運用 LINE Messaging API 設計直覺的互動式介面。實作排程系統支援自訂通知頻率，提升使用者體驗與系統穩定性。"
+				],
 				"image": "/images/project2.jpg",
 				"category": "web",
 				"technologies": ["Next.js", "Tailwind CSS", "Framer Motion"],
@@ -128,38 +140,37 @@
 				"live": "https://example.com"
 			},
 			{
-				"title": "天氣應用",
-				"description": "一款使用地理位置提供實時天氣信息的移動應用。",
+				"title": "Labfront 醫療研究數據整合平台",
+				"description": [
+					"利用智慧穿戴裝置遠端收集生理數據，讓研究人員能夠追蹤與管理實驗參與者的執行進度，並透過雲端平台彙整與分析數據，為醫療產業提供更高效的數據收集與管理解決方案。",
+					"擔任前端團隊 Lead，規劃與統籌前端架構，以 React 為基礎，搭配 Redux Saga 管理狀態，負責 AWS 部署，建立 CI/CD 流程，確保系統穩定性與開發效率，同時導入 TS 與自動化測試與即時監控，提升系統可維護性與用戶體驗。"
+				],
 				"image": "/images/project3.jpg",
-				"category": "mobile",
-				"technologies": ["React Native", "TypeScript", "Weather API"],
+				"category": "web",
+				"technologies": ["React", "TypeScript", "Weather API"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
 			{
-				"title": "品牌識別設計",
-				"description": "完整的品牌識別，包括標誌、配色方案和品牌指南。",
+				"title": "Personal Blog & Portfolio",
+				"description": [
+					"採用 Next.js 搭配 Tailwind CSS，打造高效、響應式的個人部落格，提供最佳化的前端效能與使用者體驗。透過 SSG 與 ISR 提升載入速度與 SEO 表現，確保內容即時且可擴展。CDN 與自動化部署於 Vercel & github pages，實現高可用性與 CI/CD 流程。"
+				],
 				"image": "/images/project4.jpg",
-				"category": "design",
-				"technologies": ["Figma", "Illustrator", "Photoshop"],
+				"category": "web",
+				"technologies": ["Next.js", "Tailwind CSS", "Framer Motion"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
 			{
-				"title": "任務管理應用",
-				"description": "一個幫助用戶組織任務和追蹤進度的生產力應用。",
+				"title": "Wander Map 登山健行論壇 ",
+				"description": [
+					"擔任專案發起人，協同五人團隊負責前後端開發與整合，打造台灣登山健行資訊與社群交流平台。以互動地圖搜尋為核心，提供上百條步道的路線圖、座標、即時天氣等資訊，並整合會員系統，讓使用者能分享心得、發表評論，打造開放的戶外行程交流平台。",
+					"前端採用 React，提供流暢的互動體驗；後端使用 Node.js（Express）搭配 MySQL，確保高效數據處理；系統部署於 AWS，具備高可用性與可擴展架構，採用 RESTful API 確保良好的系統維護與擴充性。"
+				],
 				"image": "/images/project5.jpg",
 				"category": "web",
-				"technologies": ["Vue.js", "Firebase", "Vuetify"],
-				"github": "https://github.com",
-				"live": "https://example.com"
-			},
-			{
-				"title": "餐廳網站",
-				"description": "一個具有在線訂餐和預訂功能的餐廳網站。",
-				"image": "/images/project6.jpg",
-				"category": "web",
-				"technologies": ["WordPress", "PHP", "MySQL", "Custom Theme"],
+				"technologies": ["React", "Node.js", "MySQL", "Express"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			}

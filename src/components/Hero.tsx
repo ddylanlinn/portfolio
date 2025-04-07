@@ -37,7 +37,7 @@ const Hero = () => {
 					>
 						<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-3">
 							{hero.greeting}{' '}
-							<span className="text-[var(--primary)]">Dylan CH Lin</span>
+							<span className="text-[var(--primary)]">Dylan Lin</span>
 						</h1>
 						<h2 className="text-lg sm:text-xl text-[var(--text-secondary)] mb-4">
 							{hero.title}

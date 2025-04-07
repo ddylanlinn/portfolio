@@ -1,6 +1,5 @@
 'use client'
 
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { useLanguage } from '@/context/LanguageContext'
 
 const Footer = () => {
@@ -16,11 +15,10 @@ const Footer = () => {
 
 	return (
 		<footer className="bg-[var(--bg-footer)]">
-			<div className="section-container py-0">
-
+			<div className="max-w-7xl mx-auto px-4 sm:px-28 lg:px-42 py-2 md:py-3">
 				<div className="text-center text-[var(--text-secondary)]">
 					<p>
-						&copy; {currentYear} Dylan {footer.rights}
+						&copy; {currentYear} {footer.rights}
 					</p>
 				</div>
 			</div>
