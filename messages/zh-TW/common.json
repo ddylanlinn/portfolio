@@ -9,7 +9,7 @@
 	"hero": {
 		"greeting": "嗨，我是",
 		"title": "全端軟體工程師",
-		"description": "",
+		"description": "喜歡挖掘生活上的不便，找到更好的解決方法。注重使用者及開發者的體驗並相信透過創新和合作，一起打造出很酷很棒的產品，讓技術真正改善生活！",
 		"cta": {
 			"contact": "聯絡我",
 			"projects": "查看作品"
@@ -40,12 +40,11 @@
 	"experience": {
 		"title": "工作經驗",
 		"period": "時間",
-		"technologiesUsed": "使用技術",
 		"list": [
 			{
-				"company": "科技創新公司",
-				"logo": "/images/company1.jpg",
-				"title": "軟體開發工程師",
+				"company": "街口電子支付股份有限公司",
+				"logo": "/images/logo_jko.png",
+				"title": "軟體工程師",
 				"period": "2023年8月 - 至今",
 				"description": [
 					"與設計、mobile、後端團隊密切合作負責 5+ 個 WebView 開發確保產品能夠順利進行。",
@@ -56,16 +55,21 @@
 				],
 				"technologies": [
 					"React",
-					"Next.js",
+					"Tailwind",
 					"TypeScript",
-					"Redux",
-					"Tailwind CSS",
-					"AWS"
+					"Node.js",
+					"Testing",
+					"MySQL",
+					"SEO",
+					"Azure",
+					"GTM",
+					"CI/CD",
+					"Docker"
 				]
 			},
 			{
-				"company": "數位解決方案集團",
-				"logo": "/images/company2.jpg",
+				"company": "擎寶科技股份有限公司",
+				"logo": "/images/logo_labfront.jpeg",
 				"title": "前端軟體工程師",
 				"period": "2021年11月 - 2023年8月",
 				"description": [
@@ -76,18 +80,18 @@
 					"導入 Typescript、CICD、單元整合測試，及負責部署，並在團隊中推廣優化工具和流程。"
 				],
 				"technologies": [
-					"JavaScript",
-					"Node.js",
-					"Express",
-					"MySQL",
-					"MongoDB",
+					"TypeScript",
 					"React",
-					"Docker"
+					"Redux",
+					"Sentry",
+					"AWS",
+					"CI/CD",
+					"Testing"
 				]
 			},
 			{
 				"company": "Lidemy 程式實驗計畫",
-				"logo": "/images/company3.jpg",
+				"logo": "/images/logo_lidemy.png",
 				"title": "前端開發工程師",
 				"period": "2021年1月 - 2021年11月",
 				"description": [
@@ -95,16 +99,19 @@
 					"熟悉 HTML / CSS / JavaScript，具備開發 RWD 頁面與 API 串接能力。",
 					"掌握 Node.js 進行 RESTful API 設計，並精通 React 與狀態管理，能獨立開發與維護專案。",
 					"熟悉 Git Flow 版本控制，並具備 AWS / GCP 佈署維運經驗。",
-					"擔任 專案 Owner，負責產品開發與團隊管理。"
+					"擔任專案負責人，負責產品開發與團隊管理。"
 				],
 				"technologies": [
-					"HTML5",
-					"CSS3",
 					"JavaScript",
+					"HTML",
+					"CSS",
 					"jQuery",
 					"Bootstrap",
-					"WordPress",
-					"PHP"
+					"PHP",
+					"Node.js",
+					"Express",
+					"MySQL",
+					"AWS"
 				]
 			}
 		]
@@ -121,9 +128,9 @@
 					"為公司內部各部門提供統一的後台管理系統，解決多樣化的後台需求。平台透過標準化的模板代碼和拖拉式介面設計，快速生成後台系統，並確保格式一致性。系統內建人員登入與權限管理功能，提升管理效率。",
 					"使用 MySQL 結合 Blitz.js 和 Prisma 進行數據管理。系統整合 Entra 進行身份驗證與角色存取，確保安全性與用戶管理的便捷性。自定義 proxy 以解決驗簽、跨網域存取及系統監控的需求。使用 YAML 定義配置解決規格統一與模板生成衝突等挑戰，提升系統的靈活性與可維護性。"
 				],
-				"image": "/images/project1.jpg",
+				"image": "/images/project_jko.png",
 				"category": "web",
-				"technologies": ["React", "Node.js", "MongoDB", "Express"],
+				"technologies": ["React", "Blitz.js", "Prisma", "MySQL", "Entra", "CI/CD", "Docker"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -133,9 +140,9 @@
 					"開發個人化 LINE 聊天機器人，提供使用者自動追蹤與通知服務，讓用戶能透過簡單的對話介面設定個人化的資訊追蹤與提醒功能。",
 					"後端系統系統採用 Node.js 與 TypeScript，運用 LINE Messaging API 設計直覺的互動式介面。實作排程系統支援自訂通知頻率，提升使用者體驗與系統穩定性。"
 				],
-				"image": "/images/project2.jpg",
+				"image": "/images/project_line.png",
 				"category": "web",
-				"technologies": ["Next.js", "Tailwind CSS", "Framer Motion"],
+				"technologies": ["Express", "TypeScript", "LINE Messaging API", "Crawler", "CI/CD"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -145,9 +152,9 @@
 					"利用智慧穿戴裝置遠端收集生理數據，讓研究人員能夠追蹤與管理實驗參與者的執行進度，並透過雲端平台彙整與分析數據，為醫療產業提供更高效的數據收集與管理解決方案。",
 					"擔任前端團隊 Lead，規劃與統籌前端架構，以 React 為基礎，搭配 Redux Saga 管理狀態，負責 AWS 部署，建立 CI/CD 流程，確保系統穩定性與開發效率，同時導入 TS 與自動化測試與即時監控，提升系統可維護性與用戶體驗。"
 				],
-				"image": "/images/project3.jpg",
+				"image": "/images/project_labfront.avif",
 				"category": "web",
-				"technologies": ["React", "TypeScript", "Weather API"],
+				"technologies": ["React", "TypeScript", "AWS", "CI/CD", "Testing", "Sentry"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -156,9 +163,9 @@
 				"description": [
 					"採用 Next.js 搭配 Tailwind CSS，打造高效、響應式的個人部落格，提供最佳化的前端效能與使用者體驗。透過 SSG 與 ISR 提升載入速度與 SEO 表現，確保內容即時且可擴展。CDN 與自動化部署於 Vercel & github pages，實現高可用性與 CI/CD 流程。"
 				],
-				"image": "/images/project4.jpg",
+				"image": "/images/project_blog.png",
 				"category": "web",
-				"technologies": ["Next.js", "Tailwind CSS", "Framer Motion"],
+				"technologies": ["Next.js", "Tailwind", "Framer Motion", "CI/CD"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -168,9 +175,9 @@
 					"擔任專案發起人，協同五人團隊負責前後端開發與整合，打造台灣登山健行資訊與社群交流平台。以互動地圖搜尋為核心，提供上百條步道的路線圖、座標、即時天氣等資訊，並整合會員系統，讓使用者能分享心得、發表評論，打造開放的戶外行程交流平台。",
 					"前端採用 React，提供流暢的互動體驗；後端使用 Node.js（Express）搭配 MySQL，確保高效數據處理；系統部署於 AWS，具備高可用性與可擴展架構，採用 RESTful API 確保良好的系統維護與擴充性。"
 				],
-				"image": "/images/project5.jpg",
+				"image": "/images/project_wander.png",
 				"category": "web",
-				"technologies": ["React", "Node.js", "MySQL", "Express"],
+				"technologies": ["React", "Node.js", "MySQL", "Express", "AWS"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			}

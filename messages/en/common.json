@@ -9,7 +9,7 @@
 	"hero": {
 		"greeting": "Hello, I'm",
 		"title": "Full Stack Developer",
-		"description": "I create efficient, robust applications with a focus on user experience and system optimization.",
+		"description": "I enjoy uncovering inconveniences in life and finding better solutions. I focus on both user and developer experiences and believe that through innovation and collaboration, we can create amazing products that truly enhance life with technology!",
 		"cta": {
 			"contact": "Get In Touch",
 			"projects": "View Projects"
@@ -19,9 +19,9 @@
 	"about": {
 		"title": "About Me",
 		"description": [
-			"With extensive full-stack development experience, I focus on front-end technologies and system optimization, dedicated to building efficient workflows and exceptional user experiences. Proficient in React, Next.js, Node.js, and other modern technologies, I'm skilled in state management, CI/CD, automated deployment, and system monitoring, with the ability to design modular, scalable systems.",
-			"I've developed internal no-code platforms using YAML-driven configurations and drag-and-drop interfaces to help cross-department teams quickly build admin dashboards. This project successfully improved development efficiency by over 70% while significantly reducing redundant work and maintenance costs, continuously optimizing collaboration experiences and development stability.",
-			"I prioritize user-centered development, constantly improving system interaction logic, page performance, and user experience. Beyond solving technical challenges, I focus on process and interpersonal collaboration quality, passionate about technical innovation, knowledge sharing, and architectural thinking, committed to creating long-term maintainable, growth-oriented value for teams and products."
+			"Full-stack developer with a front-end focus, experienced in React, Next.js, and Node.js. I build scalable systems and optimize workflows to deliver smooth user experiences. Skilled in state management, CI/CD, and system monitoring.",
+			"I worked on a YAML-configured no-code system with drag-and-drop UI, enabling cross-team users to build admin dashboards. This boosted dev efficiency by 70% and cut down redundant work and maintenance.",
+			"I prioritize user-centered design, focusing on performance, interaction, and UX. I care about both technical quality and collaboration, and I’m passionate about innovation, knowledge sharing, and building sustainable systems."
 		],
 		"cta": "Let's Work Together",
 		"education": {
@@ -43,12 +43,11 @@
 	"experience": {
 		"title": "Work Experience",
 		"period": "Period",
-		"technologiesUsed": "Technologies Used",
 		"list": [
 			{
-				"company": "Tech Innovations Inc.",
-				"logo": "/images/company1.jpg",
-				"title": "Software Developer",
+				"company": "JKO Payment Co., Ltd.",
+				"logo": "/images/logo_jko.png",
+				"title": "Software Engineer",
 				"period": "Aug 2023 - Present",
 				"description": [
 					"Collaborated closely with design, mobile, and backend teams on 5+ WebView development projects to ensure successful product delivery.",
@@ -59,16 +58,21 @@
 				],
 				"technologies": [
 					"React",
-					"Next.js",
+					"Tailwind",
 					"TypeScript",
-					"Redux",
-					"Tailwind CSS",
-					"AWS"
+					"Node.js",
+					"Testing",
+					"MySQL",
+					"SEO",
+					"Azure",
+					"GTM",
+					"CI/CD",
+					"Docker"
 				]
 			},
 			{
-				"company": "Digital Solutions Group",
-				"logo": "/images/company2.jpg",
+				"company": "Kiipo Technology Co., Ltd.",
+				"logo": "/images/logo_labfront.jpeg",
 				"title": "Frontend Developer",
 				"period": "Nov 2021 - Aug 2023",
 				"description": [
@@ -79,18 +83,18 @@
 					"Implemented TypeScript, CI/CD, unit and integration testing, and was responsible for deployment, while promoting optimization tools and processes within the team."
 				],
 				"technologies": [
-					"JavaScript",
-					"Node.js",
-					"Express",
-					"MySQL",
-					"MongoDB",
+					"TypeScript",
 					"React",
-					"Docker"
+					"Redux",
+					"Sentry",
+					"AWS",
+					"CI/CD",
+					"Testing"
 				]
 			},
 			{
 				"company": "Lidemy Programming Bootcamp",
-				"logo": "/images/company3.jpg",
+				"logo": "/images/logo_lidemy.png",
 				"title": "Frontend Developer",
 				"period": "Jan 2021 - Nov 2021",
 				"description": [
@@ -101,13 +105,16 @@
 					"Served as Project Owner, responsible for product development and team management."
 				],
 				"technologies": [
-					"HTML5",
-					"CSS3",
 					"JavaScript",
+					"HTML",
+					"CSS",
 					"jQuery",
 					"Bootstrap",
-					"WordPress",
-					"PHP"
+					"PHP",
+					"Node.js",
+					"Express",
+					"MySQL",
+					"AWS"
 				]
 			}
 		]
@@ -119,14 +126,14 @@
 		"noProjects": "No projects found in this category.",
 		"list": [
 			{
-				"title": "Backend Management System Development Platform",
+				"title": "Backstage System Development Platform",
 				"description": [
 					"Provided a unified backend management system for various departments within the company, addressing diverse backend needs. The platform uses standardized template code and drag-and-drop interface design to quickly generate backend systems with consistent formatting. The system includes built-in login and permission management features, improving management efficiency.",
 					"Used MySQL combined with Blitz.js and Prisma for data management. The system integrates Entra for authentication and role-based access, ensuring security and user management convenience. Customized proxy solutions to address verification signing, cross-domain access, and system monitoring requirements. Used YAML configuration definitions to solve specification uniformity and template generation conflicts, enhancing system flexibility and maintainability."
 				],
-				"image": "/images/project1.jpg",
+				"image": "/images/project_jko.png",
 				"category": "web",
-				"technologies": ["React", "Node.js", "MongoDB", "Express"],
+				"technologies": ["React", "Blitz.js", "Prisma", "MySQL", "Entra", "CI/CD", "Docker"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -136,21 +143,21 @@
 					"Developed a personalized LINE chatbot providing users with automated tracking and notification services, allowing users to set up personalized information tracking and reminder functions through a simple dialogue interface.",
 					"The backend system uses Node.js and TypeScript, utilizing LINE Messaging API to design intuitive interactive interfaces. Implemented scheduling systems supporting customizable notification frequencies, enhancing user experience and system stability."
 				],
-				"image": "/images/project2.jpg",
+				"image": "/images/project_line.png",
 				"category": "web",
-				"technologies": ["Next.js", "Tailwind CSS", "Framer Motion"],
+				"technologies": ["Express", "TypeScript", "LINE Messaging API", "Crawler", "CI/CD"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
 			{
-				"title": "Labfront Medical Research Data Integration Platform",
+				"title": "Medical Research Data Integration Platform",
 				"description": [
 					"Utilized smart wearable devices to remotely collect physiological data, allowing researchers to track and manage participants' progress, and aggregate and analyze data through a cloud platform, providing the medical industry with more efficient data collection and management solutions.",
 					"Served as Frontend Team Lead, planning and coordinating frontend architecture based on React, with Redux Saga for state management, responsible for AWS deployment, establishing CI/CD workflows, ensuring system stability and development efficiency, while implementing TypeScript, automated testing, and real-time monitoring to improve system maintainability and user experience."
 				],
-				"image": "/images/project3.jpg",
+				"image": "/images/project_labfront.avif",
 				"category": "web",
-				"technologies": ["React", "TypeScript", "Weather API"],
+				"technologies": ["React", "TypeScript", "AWS", "CI/CD", "Testing", "Sentry"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -159,9 +166,9 @@
 				"description": [
 					"Used Next.js with Tailwind CSS to create an efficient, responsive personal blog, providing optimized frontend performance and user experience. Enhanced loading speed and SEO performance through SSG and ISR, ensuring content is timely and scalable. Implemented CDN and automated deployment on Vercel & GitHub Pages, achieving high availability and CI/CD workflow."
 				],
-				"image": "/images/project4.jpg",
+				"image": "/images/project_blog.png",
 				"category": "web",
-				"technologies": ["Next.js", "Tailwind CSS", "Framer Motion"],
+				"technologies": ["Next.js", "Tailwind", "Framer Motion", "CI/CD"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -171,9 +178,9 @@
 					"Served as project initiator, collaborating with a five-person team responsible for frontend and backend development and integration, creating a Taiwanese hiking information and community exchange platform. Using interactive map search as the core feature, providing route maps, coordinates, real-time weather information for hundreds of trails, and integrating membership systems allowing users to share experiences and post comments, building an open outdoor itinerary exchange platform.",
 					"Frontend uses React, providing a smooth interactive experience; backend uses Node.js (Express) with MySQL, ensuring efficient data processing; system deployed on AWS, featuring high availability and scalable architecture, using RESTful API to ensure good system maintenance and extensibility."
 				],
-				"image": "/images/project5.jpg",
+				"image": "/images/project_wander.png",
 				"category": "web",
-				"technologies": ["React", "Node.js", "MySQL", "Express"],
+				"technologies": ["React", "Node.js", "MySQL", "Express", "AWS"],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			}

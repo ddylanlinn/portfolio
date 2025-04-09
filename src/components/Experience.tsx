@@ -93,9 +93,6 @@ const Experience = () => {
 									</div>
 
 									<div className="mt-4">
-										<p className="text-[var(--text-primary)] font-medium mb-2">
-											{experienceText.technologiesUsed}:
-										</p>
 										<div className="flex flex-wrap gap-2">
 											{exp.technologies.map((tech: string, i: number) => (
 												<span

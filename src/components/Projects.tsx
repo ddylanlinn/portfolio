@@ -22,6 +22,37 @@ type ProjectsText = {
 	list?: Project[]
 }
 
+// CSS styles for description container
+const descriptionStyles = `
+  .description-container {
+    max-height: 6em; /* Approximately 4 lines of text */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    position: relative;
+  }
+
+  @media (min-width: 768px) {
+    .description-container::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1.5em;
+      background: linear-gradient(transparent, var(--bg-card));
+      transition: opacity 0.3s ease;
+    }
+    
+    .bg-\\[var\\(--bg-card\\)\\]:hover .description-container {
+      max-height: 300px;
+    }
+    
+    .bg-\\[var\\(--bg-card\\)\\]:hover .description-container::after {
+      opacity: 0;
+    }
+  }
+`
+
 const Projects = () => {
 	const { messages } = useLanguage()
 
@@ -56,6 +87,7 @@ const Projects = () => {
 
 	return (
 		<section id="projects" className="py-6 md:py-12 bg-[var(--bg-main)]">
+			<style dangerouslySetInnerHTML={{ __html: descriptionStyles }} />
 			<div className="section-container">
 				<h2 className="section-title">{projectsText.title}</h2>
 
@@ -70,13 +102,15 @@ const Projects = () => {
 							transition={{ duration: 0.5, delay: index * 0.1 }}
 							className="bg-[var(--bg-card)] rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col h-full"
 						>
-							<div className="relative h-40 w-full">
-								<Image
-									src={project.image}
-									alt={project.title}
-									fill
-									style={{ objectFit: 'cover' }}
-								/>
+							<div className="flex justify-center items-center p-4">
+								<div className="relative h-48 w-80">
+									<Image
+										src={project.image}
+										alt={project.title}
+										fill
+										style={{ objectFit: 'contain' }}
+									/>
+								</div>
 							</div>
 							<div className="p-4 flex flex-col flex-grow">
 								<h3 className="text-xl font-bold mb-1 text-[var(--text-primary)]">
@@ -84,7 +118,7 @@ const Projects = () => {
 								</h3>
 
 								<div className="flex flex-col justify-between flex-grow">
-									<div className="text-[var(--text-secondary)] text-sm space-y-2 mb-3">
+									<div className="text-[var(--text-secondary)] text-sm space-y-2 mb-3 description-container">
 										{renderDescription(project.description)}
 									</div>
 
