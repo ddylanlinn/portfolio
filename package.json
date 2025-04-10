@@ -12,6 +12,7 @@
 		"deploy:github": "npm run build && gh-pages -d out"
 	},
 	"dependencies": {
+		"@emailjs/browser": "^4.4.1",
 		"@react-three/drei": "^10.0.6",
 		"@react-three/fiber": "^9.1.2",
 		"framer-motion": "^12.6.3",

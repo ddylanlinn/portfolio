@@ -9,7 +9,6 @@ A sleek, responsive portfolio website built with Next.js and Tailwind CSS.
 - 🌙 Dark mode support
 - ⚡ Fast performance with Next.js
 - 🧩 Modular component structure
-- 📝 Contact form with validation
 
 ## Technologies Used
 

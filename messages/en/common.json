@@ -3,15 +3,13 @@
 		"home": "Home",
 		"about": "About",
 		"experience": "Experience",
-		"projects": "Projects",
-		"contact": "Contact"
+		"projects": "Projects"
 	},
 	"hero": {
 		"greeting": "Hello, I'm",
 		"title": "Full Stack Developer",
 		"description": "I enjoy uncovering inconveniences in life and finding better solutions. I focus on both user and developer experiences and believe that through innovation and collaboration, we can create amazing products that truly enhance life with technology!",
 		"cta": {
-			"contact": "Get In Touch",
 			"projects": "View Projects"
 		},
 		"scrollDown": "Scroll Down"
@@ -21,7 +19,7 @@
 		"description": [
 			"Full-stack developer with a front-end focus, experienced in React, Next.js, and Node.js. I build scalable systems and optimize workflows to deliver smooth user experiences. Skilled in state management, CI/CD, and system monitoring.",
 			"I worked on a YAML-configured no-code system with drag-and-drop UI, enabling cross-team users to build admin dashboards. This boosted dev efficiency by 70% and cut down redundant work and maintenance.",
-			"I prioritize user-centered design, focusing on performance, interaction, and UX. I care about both technical quality and collaboration, and I’m passionate about innovation, knowledge sharing, and building sustainable systems."
+			"I prioritize user-centered design, focusing on performance, interaction, and UX. I care about both technical quality and collaboration, and I'm passionate about innovation, knowledge sharing, and building sustainable systems."
 		],
 		"cta": "Let's Work Together",
 		"education": {
@@ -116,6 +114,23 @@
 					"MySQL",
 					"AWS"
 				]
+			},
+			{
+				"company": "Diverse Career Experience",
+				"logo": "/portfolio/images/logo_crossdomain.png",
+				"title": "Chief Editor, Marketing Planner",
+				"period": "Experience before software development",
+				"description": [
+					"With diverse work experience as a chief editor and marketing planner, I've developed cross-domain perspectives and broader problem-solving mindsets.",
+					"Through my interdisciplinary background, I can better think from users' perspectives, understand the needs and pain points of different groups, and propose solutions that better meet actual requirements.",
+					"Combining media editing and marketing planning experience, I excel at project execution, content creation, and event management, effectively integrating resources and achieving project goals to create more comprehensive product and service experiences."
+				],
+				"technologies": [
+					"Content Planning",
+					"Event Management",
+					"Project Management",
+					"Content Marketing"
+				]
 			}
 		]
 	},
@@ -133,7 +148,15 @@
 				],
 				"image": "/portfolio/images/project_jko.png",
 				"category": "web",
-				"technologies": ["React", "Blitz.js", "Prisma", "MySQL", "Entra", "CI/CD", "Docker"],
+				"technologies": [
+					"React",
+					"Blitz.js",
+					"Prisma",
+					"MySQL",
+					"Entra",
+					"CI/CD",
+					"Docker"
+				],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -145,7 +168,13 @@
 				],
 				"image": "/portfolio/images/project_line.png",
 				"category": "web",
-				"technologies": ["Express", "TypeScript", "LINE Messaging API", "Crawler", "CI/CD"],
+				"technologies": [
+					"Express",
+					"TypeScript",
+					"LINE Messaging API",
+					"Crawler",
+					"CI/CD"
+				],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -157,7 +186,14 @@
 				],
 				"image": "/portfolio/images/project_labfront.avif",
 				"category": "web",
-				"technologies": ["React", "TypeScript", "AWS", "CI/CD", "Testing", "Sentry"],
+				"technologies": [
+					"React",
+					"TypeScript",
+					"AWS",
+					"CI/CD",
+					"Testing",
+					"Sentry"
+				],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -185,25 +221,6 @@
 				"live": "https://example.com"
 			}
 		]
-	},
-	"contact": {
-		"title": "Get In Touch",
-		"description": "I'm interested in freelance opportunities and collaborations. If you have a project that needs my expertise, or if you just want to say hi, feel free to reach out!",
-		"form": {
-			"name": "Name",
-			"email": "Email",
-			"subject": "Subject",
-			"message": "Message",
-			"sending": "Sending...",
-			"send": "Send Message",
-			"success": "Your message has been sent successfully!",
-			"error": "There was an error sending your message. Please try again."
-		},
-		"info": {
-			"email": "Email",
-			"phone": "Phone",
-			"location": "Location"
-		}
 	},
 	"footer": {
 		"tagline": "Creating beautiful digital experiences",

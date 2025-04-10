@@ -15,7 +15,6 @@ const Hero = () => {
 		description:
 			'I create beautiful, responsive websites and applications with a focus on user experience and clean code.',
 		cta: {
-			contact: 'Contact Me',
 			projects: 'View Projects',
 		},
 		scrollDown: 'Scroll Down',
@@ -45,10 +44,7 @@ const Hero = () => {
 						<p className="text-base mb-6 max-w-lg">{hero.description}</p>
 
 						<div className="flex flex-wrap gap-3">
-							<a href="#contact" className="button-primary cursor-pointer">
-								{hero.cta.contact}
-							</a>
-							<a href="#projects" className="button-outline cursor-pointer">
+							<a href="#projects" className="button-primary cursor-pointer">
 								{hero.cta.projects}
 							</a>
 						</div>

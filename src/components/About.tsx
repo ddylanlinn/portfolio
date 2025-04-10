@@ -121,7 +121,7 @@ const About = () => {
 							</p>
 						))}
 
-						<a href="#contact" className="button-primary">
+						<a href="mailto:ddylanlinn@gmail.com" className="button-primary">
 							{about.cta}
 						</a>
 					</motion.div>

@@ -18,7 +18,6 @@ const Navbar = () => {
 		about: 'About',
 		experience: 'Experience',
 		projects: 'Projects',
-		contact: 'Contact',
 	}
 
 	useEffect(() => {
@@ -39,7 +38,6 @@ const Navbar = () => {
 		{ name: navigation.about, href: '#about' },
 		{ name: navigation.experience, href: '#experience' },
 		{ name: navigation.projects, href: '#projects' },
-		{ name: navigation.contact, href: '#contact' },
 	]
 
 	return (

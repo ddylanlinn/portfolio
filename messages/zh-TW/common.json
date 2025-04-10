@@ -3,15 +3,13 @@
 		"home": "首頁",
 		"about": "關於我",
 		"experience": "工作經驗",
-		"projects": "專案作品",
-		"contact": "聯絡我"
+		"projects": "專案作品"
 	},
 	"hero": {
 		"greeting": "嗨，我是",
 		"title": "全端軟體工程師",
 		"description": "喜歡挖掘生活上的不便，找到更好的解決方法。注重使用者及開發者的體驗並相信透過創新和合作，一起打造出很酷很棒的產品，讓技術真正改善生活！",
 		"cta": {
-			"contact": "聯絡我",
 			"projects": "查看作品"
 		},
 		"scrollDown": "向下滾動"
@@ -113,6 +111,18 @@
 					"MySQL",
 					"AWS"
 				]
+			},
+			{
+				"company": "多元職涯經歷",
+				"logo": "/portfolio/images/logo_crossdomain.png",
+				"title": "媒體主編、行銷企劃",
+				"period": "軟體開發前的經歷",
+				"description": [
+					"具備媒體主編與行銷企劃的多元工作經驗，培養了跨界視角與更廣闊的問題解決思維。",
+					"藉由跨領域背景，更能站在使用者角度思考，理解不同族群的需求與痛點，提出更符合實際需求的解決方案。",
+					"融合媒體編輯與行銷策劃經驗，擅長企劃執行、內容創作與活動管理，能有效整合資源並實現專案目標，創造更全面的產品與服務體驗。"
+				],
+				"technologies": ["內容策劃", "活動規劃", "專案管理", "內容行銷"]
 			}
 		]
 	},
@@ -130,7 +140,15 @@
 				],
 				"image": "/portfolio/images/project_jko.png",
 				"category": "web",
-				"technologies": ["React", "Blitz.js", "Prisma", "MySQL", "Entra", "CI/CD", "Docker"],
+				"technologies": [
+					"React",
+					"Blitz.js",
+					"Prisma",
+					"MySQL",
+					"Entra",
+					"CI/CD",
+					"Docker"
+				],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -142,7 +160,13 @@
 				],
 				"image": "/portfolio/images/project_line.png",
 				"category": "web",
-				"technologies": ["Express", "TypeScript", "LINE Messaging API", "Crawler", "CI/CD"],
+				"technologies": [
+					"Express",
+					"TypeScript",
+					"LINE Messaging API",
+					"Crawler",
+					"CI/CD"
+				],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -154,7 +178,14 @@
 				],
 				"image": "/portfolio/images/project_labfront.avif",
 				"category": "web",
-				"technologies": ["React", "TypeScript", "AWS", "CI/CD", "Testing", "Sentry"],
+				"technologies": [
+					"React",
+					"TypeScript",
+					"AWS",
+					"CI/CD",
+					"Testing",
+					"Sentry"
+				],
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
@@ -182,25 +213,6 @@
 				"live": "https://example.com"
 			}
 		]
-	},
-	"contact": {
-		"title": "聯絡我",
-		"description": "我對自由工作機會和合作感興趣。如果您有需要我專業知識的項目，或者只是想打個招呼，請隨時聯繫！",
-		"form": {
-			"name": "姓名",
-			"email": "電子郵件",
-			"subject": "主旨",
-			"message": "訊息",
-			"sending": "發送中...",
-			"send": "發送訊息",
-			"success": "您的訊息已成功發送！",
-			"error": "發送訊息時出錯。請再試一次。"
-		},
-		"info": {
-			"email": "電子郵件",
-			"phone": "電話",
-			"location": "位置"
-		}
 	},
 	"footer": {
 		"tagline": "創造美好的數位體驗",
