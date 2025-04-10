@@ -5,7 +5,7 @@
 	"homepage": "https://ddylanlinn.github.io/portfolio",
 	"scripts": {
 		"dev": "next dev --turbopack",
-		"build": "NEXT_PUBLIC_BASE_PATH=/portfolio next build",
+		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
 		"deploy": "node scripts/deploy.js",

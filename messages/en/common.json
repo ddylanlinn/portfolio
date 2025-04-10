@@ -46,7 +46,7 @@
 		"list": [
 			{
 				"company": "JKO Payment Co., Ltd.",
-				"logo": "/images/logo_jko.png",
+				"logo": "/portfolio/images/logo_jko.png",
 				"title": "Software Engineer",
 				"period": "Aug 2023 - Present",
 				"description": [
@@ -72,7 +72,7 @@
 			},
 			{
 				"company": "Kiipo Technology Co., Ltd.",
-				"logo": "/images/logo_labfront.jpeg",
+				"logo": "/portfolio/images/logo_labfront.jpeg",
 				"title": "Frontend Developer",
 				"period": "Nov 2021 - Aug 2023",
 				"description": [
@@ -94,7 +94,7 @@
 			},
 			{
 				"company": "Lidemy Programming Bootcamp",
-				"logo": "/images/logo_lidemy.png",
+				"logo": "/portfolio/images/logo_lidemy.png",
 				"title": "Frontend Developer",
 				"period": "Jan 2021 - Nov 2021",
 				"description": [
@@ -131,7 +131,7 @@
 					"Provided a unified backend management system for various departments within the company, addressing diverse backend needs. The platform uses standardized template code and drag-and-drop interface design to quickly generate backend systems with consistent formatting. The system includes built-in login and permission management features, improving management efficiency.",
 					"Used MySQL combined with Blitz.js and Prisma for data management. The system integrates Entra for authentication and role-based access, ensuring security and user management convenience. Customized proxy solutions to address verification signing, cross-domain access, and system monitoring requirements. Used YAML configuration definitions to solve specification uniformity and template generation conflicts, enhancing system flexibility and maintainability."
 				],
-				"image": "/images/project_jko.png",
+				"image": "/portfolio/images/project_jko.png",
 				"category": "web",
 				"technologies": ["React", "Blitz.js", "Prisma", "MySQL", "Entra", "CI/CD", "Docker"],
 				"github": "https://github.com",
@@ -143,7 +143,7 @@
 					"Developed a personalized LINE chatbot providing users with automated tracking and notification services, allowing users to set up personalized information tracking and reminder functions through a simple dialogue interface.",
 					"The backend system uses Node.js and TypeScript, utilizing LINE Messaging API to design intuitive interactive interfaces. Implemented scheduling systems supporting customizable notification frequencies, enhancing user experience and system stability."
 				],
-				"image": "/images/project_line.png",
+				"image": "/portfolio/images/project_line.png",
 				"category": "web",
 				"technologies": ["Express", "TypeScript", "LINE Messaging API", "Crawler", "CI/CD"],
 				"github": "https://github.com",
@@ -155,7 +155,7 @@
 					"Utilized smart wearable devices to remotely collect physiological data, allowing researchers to track and manage participants' progress, and aggregate and analyze data through a cloud platform, providing the medical industry with more efficient data collection and management solutions.",
 					"Served as Frontend Team Lead, planning and coordinating frontend architecture based on React, with Redux Saga for state management, responsible for AWS deployment, establishing CI/CD workflows, ensuring system stability and development efficiency, while implementing TypeScript, automated testing, and real-time monitoring to improve system maintainability and user experience."
 				],
-				"image": "/images/project_labfront.avif",
+				"image": "/portfolio/images/project_labfront.avif",
 				"category": "web",
 				"technologies": ["React", "TypeScript", "AWS", "CI/CD", "Testing", "Sentry"],
 				"github": "https://github.com",
@@ -166,7 +166,7 @@
 				"description": [
 					"Used Next.js with Tailwind CSS to create an efficient, responsive personal blog, providing optimized frontend performance and user experience. Enhanced loading speed and SEO performance through SSG and ISR, ensuring content is timely and scalable. Implemented CDN and automated deployment on Vercel & GitHub Pages, achieving high availability and CI/CD workflow."
 				],
-				"image": "/images/project_blog.png",
+				"image": "/portfolio/images/project_blog.png",
 				"category": "web",
 				"technologies": ["Next.js", "Tailwind", "Framer Motion", "CI/CD"],
 				"github": "https://github.com",
@@ -178,7 +178,7 @@
 					"Served as project initiator, collaborating with a five-person team responsible for frontend and backend development and integration, creating a Taiwanese hiking information and community exchange platform. Using interactive map search as the core feature, providing route maps, coordinates, real-time weather information for hundreds of trails, and integrating membership systems allowing users to share experiences and post comments, building an open outdoor itinerary exchange platform.",
 					"Frontend uses React, providing a smooth interactive experience; backend uses Node.js (Express) with MySQL, ensuring efficient data processing; system deployed on AWS, featuring high availability and scalable architecture, using RESTful API to ensure good system maintenance and extensibility."
 				],
-				"image": "/images/project_wander.png",
+				"image": "/portfolio/images/project_wander.png",
 				"category": "web",
 				"technologies": ["React", "Node.js", "MySQL", "Express", "AWS"],
 				"github": "https://github.com",
