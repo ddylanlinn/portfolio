@@ -3,11 +3,29 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { FiArrowDown } from 'react-icons/fi'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaGlobe, FaEnvelope } from 'react-icons/fa'
 import { useLanguage } from '@/context/LanguageContext'
+import { useState } from 'react'
 
 const Hero = () => {
 	const { messages } = useLanguage()
+	const [copyFeedback, setCopyFeedback] = useState('')
+
+	const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+		try {
+			navigator.clipboard.writeText('ddylanlinn@gmail.com').then(
+				() => {
+					setCopyFeedback('Email copied to clipboard!')
+					setTimeout(() => setCopyFeedback(''), 2000)
+				},
+				() => {
+					console.error('Failed to copy email')
+				}
+			)
+		} catch (error) {
+			console.error('Copy failed', error)
+		}
+	}
 
 	const hero = messages.hero || {
 		greeting: "Hi, I'm",
@@ -47,11 +65,19 @@ const Hero = () => {
 							<a href="#projects" className="button-primary cursor-pointer">
 								{hero.cta.projects}
 							</a>
+							<a
+								href="/portfolio/files/resume.html"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="button-outline cursor-pointer"
+							>
+								{hero.cta.resume}
+							</a>
 						</div>
 
 						<div className="mt-6 flex gap-3">
 							<a
-								href="https://github.com"
+								href="https://github.com/ddylanlinn"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
@@ -60,7 +86,7 @@ const Hero = () => {
 								<FaGithub size={22} />
 							</a>
 							<a
-								href="https://linkedin.com"
+								href="https://www.linkedin.com/in/ddylanlinn/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
@@ -69,13 +95,26 @@ const Hero = () => {
 								<FaLinkedin size={22} />
 							</a>
 							<a
-								href="https://twitter.com"
+								href="https://www.b612isreal.com/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
-								aria-label="Twitter"
+								aria-label="Website"
 							>
-								<FaTwitter size={22} />
+								<FaGlobe size={22} />
+							</a>
+							<a
+								href="mailto:ddylanlinn@gmail.com"
+								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer relative"
+								aria-label="Email"
+								onClick={handleEmailClick}
+							>
+								<FaEnvelope size={22} />
+								{copyFeedback && (
+									<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 rounded text-xs whitespace-nowrap">
+										{copyFeedback}
+									</div>
+								)}
 							</a>
 						</div>
 					</motion.div>
@@ -87,9 +126,9 @@ const Hero = () => {
 						transition={{ duration: 0.5, delay: 0.2 }}
 						className="order-1 md:order-2 flex justify-center"
 					>
-						<div className="relative w-60 h-60 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-[var(--primary)]">
+						<div className="relative w-75 h-75 sm:w-85 sm:h-85 lg:w-100 lg:h-100 rounded-full overflow-hidden ]">
 							<Image
-								src="/images/profile.jpg"
+								src="/portfolio/images/hero.png"
 								alt="Dylan CH Lin"
 								fill
 								style={{ objectFit: 'cover' }}
