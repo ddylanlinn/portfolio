@@ -71,10 +71,10 @@
 	}
 
 	.button-primary {
-		@apply bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-white px-5 py-2 rounded-lg font-medium transition-all;
+		@apply bg-[var(--primary)] hover:bg-[var(--primary-hover)] text-white px-5 py-2 rounded-lg font-medium transition-all flex items-center justify-center;
 	}
 
 	.button-outline {
-		@apply border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary-light)] px-5 py-2 rounded-lg font-medium transition-all;
+		@apply border-2 border-[var(--primary)] text-[var(--primary)] hover:bg-[var(--primary-light)] px-5 py-2 rounded-lg font-medium transition-all flex items-center justify-center;
 	}
 }

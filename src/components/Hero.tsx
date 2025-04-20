@@ -8,7 +8,7 @@ import { useLanguage } from '@/context/LanguageContext'
 import { useState } from 'react'
 
 const Hero = () => {
-	const { messages } = useLanguage()
+	const { messages, locale } = useLanguage()
 	const [copyFeedback, setCopyFeedback] = useState('')
 
 	const handleEmailClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -38,6 +38,11 @@ const Hero = () => {
 		scrollDown: 'Scroll Down',
 	}
 
+	const resumePath =
+		locale === 'zh-TW'
+			? '/portfolio/pdf/林翰Dylan_簡歷.pdf'
+			: '/portfolio/pdf/DylanLin_Resume.pdf'
+
 	return (
 		<section
 			id="home"
@@ -66,7 +71,7 @@ const Hero = () => {
 								{hero.cta.projects}
 							</a>
 							<a
-								href="/portfolio/files/resume.html"
+								href={resumePath}
 								target="_blank"
 								rel="noopener noreferrer"
 								className="button-outline cursor-pointer"
