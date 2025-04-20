@@ -3,7 +3,13 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { FiArrowDown } from 'react-icons/fi'
-import { FaGithub, FaLinkedin, FaGlobe, FaEnvelope } from 'react-icons/fa'
+import {
+	FaGithub,
+	FaLinkedin,
+	FaGlobe,
+	FaEnvelope,
+	FaMedium,
+} from 'react-icons/fa'
 import { useLanguage } from '@/context/LanguageContext'
 import { useState } from 'react'
 
@@ -82,15 +88,6 @@ const Hero = () => {
 
 						<div className="mt-6 flex gap-3">
 							<a
-								href="https://github.com/ddylanlinn"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
-								aria-label="GitHub"
-							>
-								<FaGithub size={22} />
-							</a>
-							<a
 								href="https://www.linkedin.com/in/ddylanlinn/"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -98,6 +95,24 @@ const Hero = () => {
 								aria-label="LinkedIn"
 							>
 								<FaLinkedin size={22} />
+							</a>
+							<a
+								href="https://medium.com/@ddylanlinn"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
+								aria-label="Medium"
+							>
+								<FaMedium size={22} />
+							</a>
+							<a
+								href="https://github.com/ddylanlinn"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors cursor-pointer"
+								aria-label="GitHub"
+							>
+								<FaGithub size={22} />
 							</a>
 							<a
 								href="https://www.b612isreal.com/"
