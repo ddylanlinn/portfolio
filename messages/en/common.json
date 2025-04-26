@@ -162,24 +162,6 @@
 				"live": "https://example.com"
 			},
 			{
-				"title": "LINE BOT Personal Assistant",
-				"description": [
-					"Developed a personalized LINE chatbot providing users with automated tracking and notification services, allowing users to set up personalized information tracking and reminder functions through a simple dialogue interface.",
-					"The backend system uses Node.js and TypeScript, utilizing LINE Messaging API to design intuitive interactive interfaces. Implemented scheduling systems supporting customizable notification frequencies, enhancing user experience and system stability."
-				],
-				"image": "/portfolio/images/project_line.png",
-				"category": "web",
-				"technologies": [
-					"Express",
-					"TypeScript",
-					"LINE Messaging API",
-					"Crawler",
-					"CI/CD"
-				],
-				"github": "https://github.com",
-				"live": "https://example.com"
-			},
-			{
 				"title": "Medical Research Data Integration Platform",
 				"description": [
 					"Utilized smart wearable devices to remotely collect physiological data, allowing researchers to track and manage participants' progress, and aggregate and analyze data through a cloud platform, providing the medical industry with more efficient data collection and management solutions.",
@@ -194,6 +176,42 @@
 					"CI/CD",
 					"Testing",
 					"Sentry"
+				],
+				"github": "https://github.com",
+				"live": "https://example.com"
+			},
+			{
+				"title": "GTM Automated Tracking Service",
+				"description": [
+					"Built a unified tracking library for Web and Mobile platforms with automated GTM dataLayer event capture and Mixpanel synchronization. Improved data consistency while supporting ad performance tracking and AB testing.",
+					"Implemented a streamlined tracking system integrated with GTM, connecting GA, Facebook Pixel, and Google Ads. Added custom exclusion rules and emergency handling to enhance flexibility."
+				],
+				"image": "/portfolio/images/project_gtm.png",
+				"category": "web",
+				"technologies": [
+					"GTM",
+					"GA",
+					"Analytics Integration",
+					"Mixpanel",
+					"TypeScript"
+				],
+				"github": "https://github.com",
+				"live": "https://example.com"
+			},
+			{
+				"title": "LINE BOT Assistant",
+				"description": [
+					"Developed a personalized LINE chatbot providing users with automated tracking and notification services, allowing users to set up personalized information tracking and reminder functions through a simple dialogue interface.",
+					"The backend system uses Node.js and TypeScript, utilizing LINE Messaging API to design intuitive interactive interfaces. Implemented scheduling systems supporting customizable notification frequencies, enhancing user experience and system stability."
+				],
+				"image": "/portfolio/images/project_line.png",
+				"category": "web",
+				"technologies": [
+					"Express",
+					"TypeScript",
+					"LINE Messaging API",
+					"Crawler",
+					"CI/CD"
 				],
 				"github": "https://github.com",
 				"live": "https://example.com"

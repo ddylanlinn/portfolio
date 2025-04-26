@@ -153,24 +153,7 @@
 				"github": "https://github.com",
 				"live": "https://example.com"
 			},
-			{
-				"title": "LINE BOT 個人化助理",
-				"description": [
-					"開發個人化 LINE 聊天機器人，提供使用者自動追蹤與通知服務，讓用戶能透過簡單的對話介面設定個人化的資訊追蹤與提醒功能。",
-					"後端系統系統採用 Node.js 與 TypeScript，運用 LINE Messaging API 設計直覺的互動式介面。實作排程系統支援自訂通知頻率，提升使用者體驗與系統穩定性。"
-				],
-				"image": "/portfolio/images/project_line.png",
-				"category": "web",
-				"technologies": [
-					"Express",
-					"TypeScript",
-					"LINE Messaging API",
-					"Crawler",
-					"CI/CD"
-				],
-				"github": "https://github.com",
-				"live": "https://example.com"
-			},
+
 			{
 				"title": "Labfront 醫療研究數據整合平台",
 				"description": [
@@ -186,6 +169,42 @@
 					"CI/CD",
 					"Testing",
 					"Sentry"
+				],
+				"github": "https://github.com",
+				"live": "https://example.com"
+			},
+			{
+				"title": "GTM 自動化埋點服務",
+				"description": [
+					"建立共用埋點 library，整合 Web 和 Mobile 的事件追蹤流程，透過統一規則管理各專案埋點需求。支援自動從 GTM dataLayer 捕捉事件，並將資料同步至 Mixpanel，提升資料一致性與維護效率，同時支援第三方廣告成效追蹤與 AB 測試。",
+					"設計與實作自動化埋點流程，簡化埋點邏輯與維護負擔。導入與 GTM 深度整合的機制，串接第三方追蹤（如 GA、Facebook Pixel、Google Ads），並搭配自定義排除條件與緊急處理 (Custom HTML)，提升專案靈活性與擴展性。"
+				],
+				"image": "/portfolio/images/project_gtm.png",
+				"category": "web",
+				"technologies": [
+					"GTM",
+					"GA",
+					"Analytics Integration",
+					"Mixpanel",
+					"TypeScript"
+				],
+				"github": "https://github.com",
+				"live": "https://example.com"
+			},
+			{
+				"title": "LINE BOT 個人化助理",
+				"description": [
+					"開發個人化 LINE 聊天機器人，提供使用者自動追蹤與通知服務，讓用戶能透過簡單的對話介面設定個人化的資訊追蹤與提醒功能。",
+					"後端系統系統採用 Node.js 與 TypeScript，運用 LINE Messaging API 設計直覺的互動式介面。實作排程系統支援自訂通知頻率，提升使用者體驗與系統穩定性。"
+				],
+				"image": "/portfolio/images/project_line.png",
+				"category": "web",
+				"technologies": [
+					"Express",
+					"TypeScript",
+					"LINE Messaging API",
+					"Crawler",
+					"CI/CD"
 				],
 				"github": "https://github.com",
 				"live": "https://example.com"
