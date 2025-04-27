@@ -8,7 +8,7 @@
 	"hero": {
 		"greeting": "Hello, I'm",
 		"title": "Full Stack Developer",
-		"description": "I enjoy uncovering inconveniences in life and finding better solutions. I focus on both user and developer experiences and believe that through innovation and collaboration, we can create amazing products that truly enhance life with technology!",
+		"description": "I thrive on identifying everyday inefficiencies and crafting better digital solutions. As a frontend engineer with a solution-driven mindset, I focus on optimizing both user and developer experiences, believing that through innovation and collaboration, technology can meaningfully enhance life.",
 		"cta": {
 			"projects": "View Projects",
 			"resume": "Download Resume"
@@ -18,11 +18,10 @@
 	"about": {
 		"title": "About Me",
 		"description": [
-			"Full-stack developer with a front-end focus, experienced in React, Next.js, and Node.js. I build scalable systems and optimize workflows to deliver smooth user experiences. Skilled in state management, CI/CD, and system monitoring.",
-			"I worked on a YAML-configured no-code system with drag-and-drop UI, enabling cross-team users to build admin dashboards. This boosted dev efficiency by 70% and cut down redundant work and maintenance.",
-			"I prioritize user-centered design, focusing on performance, interaction, and UX. I care about both technical quality and collaboration, and I'm passionate about innovation, knowledge sharing, and building sustainable systems."
+			"Frontend-focused engineer with full-stack experience, specializing in React, Next.js, and Node.js. Skilled at building scalable systems and streamlining workflows to create seamless user experiences. I approach engineering with a solution-oriented mindset, aiming to design not just features but sustainable, impactful systems.",
+			"Committed to user-centered design, performance optimization, and sustainable systems. Passionate about innovation, collaborative problem-solving, and knowledge sharing to drive better outcomes."
 		],
-		"cta": "Let's Work Together",
+		"cta": "Let's Collaborate",
 		"education": {
 			"title": "Education",
 			"list": [
@@ -33,8 +32,8 @@
 		"skills": {
 			"title": "Skills",
 			"categories": {
-				"frontend": "Front-end",
-				"backend": "Back-end",
+				"frontend": "Frontend",
+				"backend": "Backend",
 				"others": "Others"
 			}
 		}
@@ -49,11 +48,11 @@
 				"title": "Software Engineer",
 				"period": "Aug 2023 - Present",
 				"description": [
-					"Collaborated closely with design, mobile, and backend teams on 5+ WebView development projects to ensure successful product delivery.",
-					"Developed and designed internal NPM packages (such as tracking tools, version management) to improve company development efficiency and collaboration experience.",
-					"Responsible for admin system development and maintenance, creating a less-code to no-code platform using YAML configuration, successfully establishing 117 admin projects, significantly reducing development workload and enhancing business self-service capabilities.",
-					"Established monitoring and performance measurement mechanisms to improve system stability and observability.",
-					"Coordinated cross-team collaboration, integrated and standardized company R&D standards and use cases, improving development efficiency and product iteration speed."
+					"Collaborated with design, mobile, and backend teams across 5+ WebView projects to ensure cohesive product delivery.",
+					"Designed and developed internal NPM packages (tracking tools, version management) to enhance team development efficiency and collaboration.",
+					"Built and maintained a low-code admin system using YAML configuration, launching 117+ projects and enabling business units to self-manage operations, significantly reducing development dependencies.",
+					"Established monitoring and performance tracking systems, improving platform stability and visibility.",
+					"Standardized R&D workflows by integrating use cases and cross-team best practices, accelerating development and product iteration."
 				],
 				"technologies": [
 					"React",
@@ -75,11 +74,11 @@
 				"title": "Frontend Developer",
 				"period": "Nov 2021 - Aug 2023",
 				"description": [
-					"Led and managed the web frontend team, ensuring they had sufficient technical expertise and resources to complete tasks.",
-					"Collaborated closely with the design department, mobile, and backend teams to ensure smooth product development from design to launch.",
-					"Participated in architecture design, pursuing more efficient and secure logic separation, maintaining code readability, maintainability, and scalability.",
-					"Optimized website performance, enhancing user experience and efficiency.",
-					"Implemented TypeScript, CI/CD, unit and integration testing, and was responsible for deployment, while promoting optimization tools and processes within the team."
+					"Led and mentored the web frontend team, ensuring technical excellence and delivery efficiency.",
+					"Coordinated with design, mobile, and backend teams to facilitate seamless product delivery from concept to launch.",
+					"Contributed to architecture design for better code separation, scalability, and maintainability.",
+					"Enhanced website performance to improve user engagement and system efficiency.",
+					"Pioneered the adoption of TypeScript, CI/CD, automated testing, and deployment pipelines, improving code quality and development reliability."
 				],
 				"technologies": [
 					"TypeScript",
@@ -97,11 +96,11 @@
 				"title": "Frontend Developer",
 				"period": "Jan 2021 - Nov 2021",
 				"description": [
-					"Participated in high-intensity full-stack development training, investing 50+ hours weekly, deeply learning front-end and back-end technologies, system design, and project development, cultivating independent problem-solving and team collaboration abilities.",
-					"Proficient in HTML/CSS/JavaScript, capable of developing responsive web pages and API integration.",
-					"Mastered Node.js for RESTful API design, and proficient in React and state management, capable of independently developing and maintaining projects.",
-					"Familiar with Git Flow version control, with AWS/GCP deployment and operations experience.",
-					"Served as Project Owner, responsible for product development and team management."
+					"Completed an intensive full-stack development program, investing over 50 hours weekly in mastering frontend and backend technologies.",
+					"Built responsive web applications with HTML, CSS, JavaScript, and API integrations.",
+					"Gained hands-on experience with RESTful API development using Node.js and Express.",
+					"Adopted React for frontend development with efficient state management.",
+					"Practiced Git Flow, deployment on AWS/GCP, and project management as a Project Owner."
 				],
 				"technologies": [
 					"JavaScript",
@@ -120,16 +119,16 @@
 				"company": "Diverse Career Experience",
 				"logo": "/portfolio/images/logo_before.png",
 				"title": "Chief Editor, Marketing Planner",
-				"period": "Experience before software development",
+				"period": "Prior to software development",
 				"description": [
-					"With diverse work experience as a chief editor and marketing planner, I've developed cross-domain perspectives and broader problem-solving mindsets.",
-					"Through my interdisciplinary background, I can better think from users' perspectives, understand the needs and pain points of different groups, and propose solutions that better meet actual requirements.",
-					"Combining media editing and marketing planning experience, I excel at project execution, content creation, and event management, effectively integrating resources and achieving project goals to create more comprehensive product and service experiences."
+					"Developed cross-functional perspectives and creative problem-solving skills through diverse experiences in editorial and marketing planning roles.",
+					"Built strong user-centric thinking, identifying needs and pain points across different audiences.",
+					"Managed projects, content creation, and event execution, integrating resources to deliver impactful experiences."
 				],
 				"technologies": [
-					"Content Planning",
-					"Event Management",
+					"Content Strategy",
 					"Project Management",
+					"Event Coordination",
 					"Content Marketing"
 				]
 			}
@@ -138,14 +137,14 @@
 	"projects": {
 		"title": "Projects",
 		"liveDemo": "Live Demo",
-		"viewCode": "Code",
+		"viewCode": "View Code",
 		"noProjects": "No projects found in this category.",
 		"list": [
 			{
 				"title": "Backstage System Development Platform",
 				"description": [
-					"Provided a unified backend management system for various departments within the company, addressing diverse backend needs. The platform uses standardized template code and drag-and-drop interface design to quickly generate backend systems with consistent formatting. The system includes built-in login and permission management features, improving management efficiency.",
-					"Used MySQL combined with Blitz.js and Prisma for data management. The system integrates Entra for authentication and role-based access, ensuring security and user management convenience. Customized proxy solutions to address verification signing, cross-domain access, and system monitoring requirements. Used YAML configuration definitions to solve specification uniformity and template generation conflicts, enhancing system flexibility and maintainability."
+					"Designed and built a unified YAML-configured no-code backend management platform with a drag-and-drop UI, enabling cross-functional teams to independently create admin dashboards. The platform utilized standardized templates for rapid system generation and included built-in authentication and role-based access control (RBAC).",
+					"Implemented MySQL with Blitz.js and Prisma for structured data management, integrated Entra for authentication, and customized proxy solutions to address verification signing, cross-domain access, and system monitoring needs."
 				],
 				"image": "/portfolio/images/project_jko.png",
 				"category": "web",
@@ -164,8 +163,8 @@
 			{
 				"title": "Medical Research Data Integration Platform",
 				"description": [
-					"Utilized smart wearable devices to remotely collect physiological data, allowing researchers to track and manage participants' progress, and aggregate and analyze data through a cloud platform, providing the medical industry with more efficient data collection and management solutions.",
-					"Served as Frontend Team Lead, planning and coordinating frontend architecture based on React, with Redux Saga for state management, responsible for AWS deployment, establishing CI/CD workflows, ensuring system stability and development efficiency, while implementing TypeScript, automated testing, and real-time monitoring to improve system maintainability and user experience."
+					"Led frontend development for a cloud-based data platform supporting real-time data aggregation and remote monitoring for medical research.",
+					"Built frontend architecture with React and Redux Saga, deployed on AWS with CI/CD pipelines, TypeScript integration, automated testing, and real-time monitoring using Sentry."
 				],
 				"image": "/portfolio/images/project_labfront.avif",
 				"category": "web",
@@ -183,8 +182,8 @@
 			{
 				"title": "GTM Automated Tracking Service",
 				"description": [
-					"Built a unified tracking library for Web and Mobile platforms with automated GTM dataLayer event capture and Mixpanel synchronization. Improved data consistency while supporting ad performance tracking and AB testing.",
-					"Implemented a streamlined tracking system integrated with GTM, connecting GA, Facebook Pixel, and Google Ads. Added custom exclusion rules and emergency handling to enhance flexibility."
+					"Developed a unified tracking system to automate GTM event capture and synchronize Mixpanel data for improved marketing analytics.",
+					"Integrated GA, Facebook Pixel, Google Ads with custom exclusion rules, streamlined tracking setup and supported A/B testing."
 				],
 				"image": "/portfolio/images/project_gtm.png",
 				"category": "web",
@@ -201,8 +200,8 @@
 			{
 				"title": "LINE BOT Assistant",
 				"description": [
-					"Developed a personalized LINE chatbot providing users with automated tracking and notification services, allowing users to set up personalized information tracking and reminder functions through a simple dialogue interface.",
-					"The backend system uses Node.js and TypeScript, utilizing LINE Messaging API to design intuitive interactive interfaces. Implemented scheduling systems supporting customizable notification frequencies, enhancing user experience and system stability."
+					"Created a personalized LINE chatbot to offer automated tracking and notifications via simple user interactions.",
+					"Developed with Node.js, TypeScript, LINE Messaging API, and implemented a custom scheduling system to enhance user experience."
 				],
 				"image": "/portfolio/images/project_line.png",
 				"category": "web",
@@ -219,7 +218,8 @@
 			{
 				"title": "Personal Blog & Portfolio",
 				"description": [
-					"Used Next.js with Tailwind CSS to create an efficient, responsive personal blog, providing optimized frontend performance and user experience. Enhanced loading speed and SEO performance through SSG and ISR, ensuring content is timely and scalable. Implemented CDN and automated deployment on Vercel & GitHub Pages, achieving high availability and CI/CD workflow."
+					"Built an optimized personal site featuring a blog and portfolio to demonstrate frontend development and SEO best practices.",
+					"Implemented with Next.js, Tailwind CSS, Framer Motion animations, SSG, ISR, and deployed using CDN via Vercel."
 				],
 				"image": "/portfolio/images/project_blog.png",
 				"category": "web",
@@ -230,8 +230,8 @@
 			{
 				"title": "Wander Map Hiking Forum",
 				"description": [
-					"Served as project initiator, collaborating with a five-person team responsible for frontend and backend development and integration, creating a Taiwanese hiking information and community exchange platform. Using interactive map search as the core feature, providing route maps, coordinates, real-time weather information for hundreds of trails, and integrating membership systems allowing users to share experiences and post comments, building an open outdoor itinerary exchange platform.",
-					"Frontend uses React, providing a smooth interactive experience; backend uses Node.js (Express) with MySQL, ensuring efficient data processing; system deployed on AWS, featuring high availability and scalable architecture, using RESTful API to ensure good system maintenance and extensibility."
+					"Initiated and led a community-driven platform for hiking enthusiasts to share trail information, weather updates, and experiences.",
+					"Built using React for frontend interactivity, Node.js and Express for backend APIs, MySQL for data storage, and deployed on AWS."
 				],
 				"image": "/portfolio/images/project_wander.png",
 				"category": "web",
@@ -242,13 +242,13 @@
 		]
 	},
 	"footer": {
-		"tagline": "Creating beautiful digital experiences",
+		"tagline": "Building Seamless Digital Experiences",
 		"quickLinks": "Quick Links",
 		"connect": "Connect",
 		"rights": "All rights reserved."
 	},
 	"theme": {
-		"light": "Switch to light mode",
-		"dark": "Switch to dark mode"
+		"light": "Switch to Light Mode",
+		"dark": "Switch to Dark Mode"
 	}
 }
