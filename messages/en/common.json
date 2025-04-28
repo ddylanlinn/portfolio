@@ -143,7 +143,7 @@
 			{
 				"title": "Backstage System Development Platform",
 				"description": [
-					"Designed and built a unified YAML-configured no-code backend management platform with a drag-and-drop UI, enabling cross-functional teams to independently create admin dashboards. The platform utilized standardized templates for rapid system generation and included built-in authentication and role-based access control (RBAC).",
+					"Developed an internal no-code platform integrating a drag-and-drop interface and YAML-driven configuration, enabling teams to independently build backend systems. Standardized templates, built-in authentication, and RBAC features boosted development efficiency by over 70% and significantly reduced maintenance overhead.",
 					"Implemented MySQL with Blitz.js and Prisma for structured data management, integrated Entra for authentication, and customized proxy solutions to address verification signing, cross-domain access, and system monitoring needs."
 				],
 				"image": "/portfolio/images/project_jko.png",
@@ -182,7 +182,7 @@
 			{
 				"title": "GTM Automated Tracking Service",
 				"description": [
-					"Developed a unified tracking system to automate GTM event capture and synchronize Mixpanel data for improved marketing analytics.",
+					"Developed a shared tracking library that unifies web and mobile event tracking, standardizes project-specific requirements, automatically captures GTM dataLayer events to sync with Mixpanel, and supports third-party ad tracking and A/B testing, significantly enhancing data consistency and maintenance efficiency.",
 					"Integrated GA, Facebook Pixel, Google Ads with custom exclusion rules, streamlined tracking setup and supported A/B testing."
 				],
 				"image": "/portfolio/images/project_gtm.png",
@@ -230,7 +230,7 @@
 			{
 				"title": "Wander Map Hiking Forum",
 				"description": [
-					"Initiated and led a community-driven platform for hiking enthusiasts to share trail information, weather updates, and experiences.",
+					"Developed a Taiwan-based hiking and trekking platform featuring an interactive map search, providing route maps, coordinates, and real-time weather updates for hundreds of trails. Integrated a membership system to enable users to share experiences, post reviews, and foster an open community for outdoor trip planning.",
 					"Built using React for frontend interactivity, Node.js and Express for backend APIs, MySQL for data storage, and deployed on AWS."
 				],
 				"image": "/portfolio/images/project_wander.png",

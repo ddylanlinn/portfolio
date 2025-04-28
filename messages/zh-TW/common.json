@@ -8,7 +8,7 @@
 	"hero": {
 		"greeting": "嗨，我是",
 		"title": "全端軟體工程師",
-		"description": "我熱衷於發掘日常生活中的不便，並打造更完善的解決方案。身為一位具備解決方案思維的工程師，我專注於優化使用者體驗與開發者體驗專注於提升使用者體驗與開發者體驗，相信透過創新與協作，科技能真正改善生活！",
+		"description": "熱衷於發掘日常生活中的不便並打造更完善的解決方案。專注於優化使用者體驗與開發者體驗專注於提升使用者體驗與開發者體驗，相信透過創新與協作，科技能真正改善生活！",
 		"cta": {
 			"projects": "查看專案",
 			"resume": "下載履歷"
@@ -18,8 +18,8 @@
 	"about": {
 		"title": "關於我",
 		"description": [
-			"具備全端開發經驗專注於前端領域工程師，擅長 React、Next.js 及 Node.js，具備構建可擴展系統與優化工作流程的經驗，致力於打造流暢的使用者體驗。",
-			"我以解決方案導向的思維進行工程實踐，重視設計不僅是功能，而是可持續且具影響力的系統。",
+			"具備全端開發經驗的工程師，專注於前端領域，精通 React、Next.js 及 Node.js。擅於打造可擴展的系統與優化開發流程，致力提供流暢且優質的使用者體驗。",
+			"熟悉多種技術架構與工具，具備系統化的思考能力，能有效將產品需求轉化為具體解決方案，注重程式碼品質與可維護性，以確保專案長期穩定運作。",
 			"重視以使用者為中心的設計、效能優化與可持續系統建置。熱愛創新、跨部門協作解決問題，以及知識分享，推動更好的產品成果。"
 		],
 		"cta": "讓我們合作吧",
@@ -136,8 +136,8 @@
 			{
 				"title": "後台管理平台開發系統",
 				"description": [
-					"設計並建置統一的 YAML 配置低代碼後台平台，結合拖拉式介面，協助跨部門團隊自主建立管理後台。系統以標準化範本快速生成後台專案，內建登入與 RBAC 權限控管功能。",
-					"使用 MySQL 搭配 Blitz.js 和 Prisma 進行資料管理，整合 Entra 認證與自訂 Proxy 解決驗簽、跨域存取與系統監控需求。"
+					"開發建置企業內部 no-code 平台，結合拖拉式介面透過 YAML 驅動配置，協助跨部門團隊自主建立管理後台。系統以標準化範本快速生成後台專案，內建登入與 RBAC 權限控管功能。提升開發效率超過 70%，並大幅減少重工與維運成本，持續優化協作體驗與開發穩定性。",
+					"使用 Blitz.js 搭配 Prisma 和 MySQL 進行資料管理，整合 Entra 與自訂 Proxy 解決驗簽、跨域存取與系統監控需求。"
 				],
 				"image": "/portfolio/images/project_jko.png",
 				"category": "web",
@@ -156,8 +156,8 @@
 			{
 				"title": "醫療研究數據整合平台",
 				"description": [
-					"主導雲端資料整合平台的前端開發，支援醫療研究即時資料蒐集與遠端監控。",
-					"採用 React 與 Redux Saga 架構前端，部署於 AWS，並建立 CI/CD 流程、導入 TypeScript、自動化測試與 Sentry 監控。"
+					"利用智慧穿戴裝置遠端收集生理數據，讓研究人員能夠追蹤與管理實驗參與者的執行進度，並透過雲端平台彙整與分析數據，為醫療產業提供更高效的數據收集與管理解決方案。",
+					"擔任前端團隊 Lead，規劃與統籌前端架構，以 React 為基礎，搭配 Redux Saga 管理狀態，負責 AWS 部署，建立 CI/CD 流程，確保系統穩定性與開發效率，同時導入 TS 與自動化測試與即時監控，提升系統可維護性與用戶體驗。"
 				],
 				"image": "/portfolio/images/project_labfront.avif",
 				"category": "web",
@@ -175,8 +175,8 @@
 			{
 				"title": "GTM 自動化追蹤服務",
 				"description": [
-					"開發統一的追蹤系統，自動化捕捉 GTM 事件並同步至 Mixpanel，以優化行銷數據分析。",
-					"整合 GA、Facebook Pixel、Google Ads 並支援客製化排除規則與 A/B 測試追蹤設定。"
+					"建立共用埋點 library，整合 Web 和 Mobile 的事件追蹤流程，透過統一規則管理各專案埋點需求。支援自動從 GTM dataLayer 捕捉事件，並將資料同步至 Mixpanel，提升資料一致性與維護效率，同時支援第三方廣告成效追蹤與 AB 測試。",
+					"擔任前端團隊 Lead，規劃與統籌前端架構，以 React 為基礎，搭配 Redux Saga 管理狀態，負責 AWS 部署，建立 CI/CD 流程，確保系統穩定性與開發效率，同時導入 TS 與自動化測試與即時監控，提升系統可維護性與用戶體驗。"
 				],
 				"image": "/portfolio/images/project_gtm.png",
 				"category": "web",
@@ -193,8 +193,8 @@
 			{
 				"title": "LINE BOT 助理",
 				"description": [
-					"打造個人化 LINE 聊天機器人，提供自訂追蹤與提醒服務。",
-					"以 Node.js 與 TypeScript 開發，串接 LINE Messaging API，並實作排程系統提升使用者體驗。"
+					"開發個人化 LINE 聊天機器人，提供使用者自動追蹤與通知服務，讓用戶能透過簡單的對話介面設定個人化的資訊追蹤與提醒功能。",
+					"後端系統系統採用 Node.js 與 TypeScript，運用 LINE Messaging API 設計直覺的互動式介面。實作排程系統支援自訂通知頻率，提升使用者體驗與系統穩定性。"
 				],
 				"image": "/portfolio/images/project_line.png",
 				"category": "web",
@@ -211,8 +211,7 @@
 			{
 				"title": "Personal Blog & Portfolio",
 				"description": [
-					"使用 Next.js 與 Tailwind CSS 建置效能優化的個人網站，展現前端開發與 SEO 最佳實踐。",
-					"實作 SSG、ISR，並透過 Vercel 部署於全球 CDN，確保網站高速穩定。"
+					"採用 Next.js 搭配 Tailwind CSS，打造高效、響應式的個人部落格，提供最佳化的前端效能與使用者體驗。透過 SSG 與 ISR 提升載入速度與 SEO 表現，確保內容即時且可擴展。CDN 與自動化部署於 Vercel，實現高可用性與 CI/CD 流程。"
 				],
 				"image": "/portfolio/images/project_blog.png",
 				"category": "web",
@@ -223,8 +222,8 @@
 			{
 				"title": "Wander Map 登山健行論壇 ",
 				"description": [
-					"發起並帶領五人團隊建置戶外登山路線交流平台，支援地圖互動搜尋、即時天氣資訊與會員分享功能。",
-					"前端採用 React，後端採用 Node.js (Express) 與 MySQL 資料庫，部署於 AWS，建置高可用且可擴展架構。"
+					"打造台灣登山健行資訊與社群交流平台。以互動地圖搜尋為核心，提供上百條步道的路線圖、座標、即時天氣等資訊，並整合會員系統，讓使用者能分享心得、發表評論，打造開放的戶外行程交流平台。",
+					"前端採用 React，提供流暢的互動體驗；後端使用 Node.js（Express）搭配 MySQL，確保高效數據處理；系統部署於 AWS，具備高可用性與可擴展架構，採用 RESTful API 確保良好的系統維護與擴充性。"
 				],
 				"image": "/portfolio/images/project_wander.png",
 				"category": "web",
