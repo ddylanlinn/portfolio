@@ -52,7 +52,7 @@ const Hero = () => {
 	return (
 		<section
 			id="home"
-			className="min-h-[90vh] flex items-center relative overflow-hidden"
+			className="min-h-[90vh] flex items-center relative overflow-hidden pt-10 md:pt-0"
 		>
 			<div className="section-container">
 				<div className="grid md:grid-cols-2 gap-6 items-center">
@@ -70,7 +70,7 @@ const Hero = () => {
 						<h2 className="text-lg sm:text-xl text-[var(--text-secondary)] mb-4">
 							{hero.title}
 						</h2>
-						<p className="text-base mb-6 max-w-lg">{hero.description}</p>
+						<p className="text-lg mb-6 max-w-lg">{hero.description}</p>
 
 						<div className="flex flex-wrap gap-3">
 							<a href="#projects" className="button-primary cursor-pointer">
@@ -157,9 +157,30 @@ const Hero = () => {
 						</div>
 					</motion.div>
 				</div>
+
+				{/* Mobile Scroll Down Indicator - Inside section container */}
+				<motion.div
+					initial={{ opacity: 0, y: -10 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{
+						duration: 0.5,
+						delay: 0.8,
+						repeat: Infinity,
+						repeatType: 'reverse',
+					}}
+					className="w-full flex justify-center mt-16 mb-4 md:hidden"
+				>
+					<a
+						href="#about"
+						className="flex flex-col items-center text-sm text-[var(--text-secondary)] cursor-pointer"
+					>
+						<span className="mb-1">{hero.scrollDown}</span>
+						<FiArrowDown size={18} />
+					</a>
+				</motion.div>
 			</div>
 
-			{/* Scroll Down Indicator */}
+			{/* Desktop Scroll Down Indicator - Absolute positioned */}
 			<motion.div
 				initial={{ opacity: 0, y: -10 }}
 				animate={{ opacity: 1, y: 0 }}
@@ -169,7 +190,7 @@ const Hero = () => {
 					repeat: Infinity,
 					repeatType: 'reverse',
 				}}
-				className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center"
+				className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-center hidden md:block"
 			>
 				<a
 					href="#about"
