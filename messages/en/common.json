@@ -7,7 +7,7 @@
 	},
 	"hero": {
 		"greeting": "Hello, I'm",
-		"title": "Full Stack Developer",
+		"title": "Frontend Engineer | FullStack Engineer",
 		"description": "I thrive on identifying everyday inefficiencies and crafting better digital solutions. As a frontend engineer with a solution-driven mindset, I focus on optimizing both user and developer experiences, believing that through innovation and collaboration, technology can meaningfully enhance life.",
 		"cta": {
 			"projects": "View Projects",
@@ -95,7 +95,7 @@
 				"company": "Lidemy Programming Bootcamp",
 				"logo": "/portfolio/images/logo_lidemy.png",
 				"title": "Frontend Developer",
-				"period": "Jan 2021 - Nov 2021",
+				"period": "Nov 2020 - Nov 2021",
 				"description": [
 					"Completed an intensive full-stack development program, investing over 50 hours weekly in mastering frontend and backend technologies.",
 					"Built responsive web applications with HTML, CSS, JavaScript, and API integrations.",

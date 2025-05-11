@@ -33,21 +33,13 @@ const Hero = () => {
 		}
 	}
 
-	const hero = messages.hero || {
-		greeting: "Hi, I'm",
-		title: 'Frontend Developer & UI/UX Designer',
-		description:
-			'I create beautiful, responsive websites and applications with a focus on user experience and clean code.',
-		cta: {
-			projects: 'View Projects',
-		},
-		scrollDown: 'Scroll Down',
-	}
+	const hero = messages?.hero || {}
+	console.log(`🟢 hero:`, hero)
 
 	const resumePath =
 		locale === 'zh-TW'
-			? '/portfolio/pdf/林翰Dylan_簡歷.pdf'
-			: '/portfolio/pdf/DylanLin_Resume.pdf'
+			? '/portfolio/pdf/dylan-resume-zhtw.pdf'
+			: '/portfolio/pdf/dylan-resume-en.pdf'
 
 	return (
 		<section
@@ -64,17 +56,17 @@ const Hero = () => {
 						className="order-2 md:order-1"
 					>
 						<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-3">
-							{hero.greeting}{' '}
+							{hero?.greeting}{' '}
 							<span className="text-[var(--primary)]">Dylan Lin</span>
 						</h1>
 						<h2 className="text-lg sm:text-xl text-[var(--text-secondary)] mb-4">
-							{hero.title}
+							{hero?.title}
 						</h2>
-						<p className="text-lg mb-6 max-w-lg">{hero.description}</p>
+						<p className="text-lg mb-6 max-w-lg">{hero?.description}</p>
 
 						<div className="flex flex-wrap gap-3">
 							<a href="#projects" className="button-primary cursor-pointer">
-								{hero.cta.projects}
+								{hero?.cta?.projects}
 							</a>
 							<a
 								href={resumePath}
@@ -82,7 +74,7 @@ const Hero = () => {
 								rel="noopener noreferrer"
 								className="button-outline cursor-pointer"
 							>
-								{hero.cta.resume}
+								{hero?.cta?.resume}
 							</a>
 						</div>
 

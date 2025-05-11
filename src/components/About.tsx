@@ -37,30 +37,7 @@ const About = () => {
 	const { messages } = useLanguage()
 	const [activeTab, setActiveTab] = useState<SkillCategory>('frontend')
 
-	const about: AboutData = messages.about || {
-		title: 'About Me',
-		description: [
-			"I'm a passionate frontend developer with over 5 years of experience creating modern web applications.",
-			'My goal is to build fast, accessible, and user-friendly websites that provide an exceptional user experience.',
-			'I believe in clean code, continuous learning, and staying up-to-date with the latest web technologies and best practices.',
-		],
-		cta: 'Get In Touch',
-		education: {
-			title: 'Education',
-			list: [
-				'National Taiwan University, Department of Computer Science',
-				'Graduated in 2019',
-			],
-		},
-		skills: {
-			title: 'My Skills',
-			categories: {
-				frontend: 'Frontend',
-				backend: 'Backend',
-				others: 'Others',
-			},
-		},
-	}
+	const about: AboutData = messages.about || {}
 
 	const skillCategories: Record<SkillCategory, string[]> = {
 		frontend: [
@@ -69,10 +46,10 @@ const About = () => {
 			'React / Redux / Saga',
 			'Next.js',
 			'Tailwind',
-			'Bundle Tools',
-			'Testing',
-			'SEO Improvement',
-			'Performance Optimization',
+			'Vite / Webpack / Rollup',
+			'Jest / Cypress',
+			'SEO',
+			'Performance',
 		],
 		backend: [
 			'Node.js',
@@ -82,6 +59,8 @@ const About = () => {
 			'MySQL',
 			'RESTful API',
 			'Redis',
+			'OAuth',
+			'Netify.js'
 		],
 		others: [
 			'EC2 / S3 / CloudFront',
@@ -89,18 +68,20 @@ const About = () => {
 			'GCP / GCE',
 			'Nginx',
 			'CI/CD',
-			'Error monitoring',
+			'Monitoring',
 			'Docker',
 			'Feature flag',
 			'Monorepo',
-			'GTM Management',
+			'GTM',
+			'GitHub/GitLab CI',
+			'Analytics'
 		],
 	}
 
 	return (
 		<section id="about" className="py-6 md:py-12">
 			<div className="section-container">
-				<h2 className="section-title">{about.title}</h2>
+				<h2 className="section-title">{about?.title}</h2>
 
 				<div className="grid md:grid-cols-2 gap-6 items-start">
 					{/* About Text */}
@@ -110,11 +91,11 @@ const About = () => {
 						viewport={{ once: true }}
 						transition={{ duration: 0.5 }}
 					>
-						{about.description.map((paragraph, index) => (
+						{about?.description?.map((paragraph, index) => (
 							<p
 								key={index}
 								className={`text-lg mb-${
-									index === about.description.length - 1 ? '4' : '3'
+									index === about?.description?.length - 1 ? '4' : '3'
 								}`}
 							>
 								{paragraph}
@@ -122,7 +103,7 @@ const About = () => {
 						))}
 
 						<a href="mailto:ddylanlinn@gmail.com" className="button-primary">
-							{about.cta}
+							{about?.cta}
 						</a>
 					</motion.div>
 
@@ -138,7 +119,7 @@ const About = () => {
 						>
 							<h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
 								<FaLaptopCode className="text-[var(--primary)]" />{' '}
-								{about.skills.title}
+								{about?.skills?.title}
 							</h3>
 
 							{/* Skills Tab Navigation */}
@@ -152,7 +133,7 @@ const About = () => {
 									onClick={() => setActiveTab('frontend')}
 								>
 									<span className="flex items-center gap-2">
-										<FaCode /> {about.skills.categories.frontend}
+										<FaCode /> {about?.skills?.categories?.frontend}
 									</span>
 								</button>
 								<button
@@ -164,7 +145,7 @@ const About = () => {
 									onClick={() => setActiveTab('backend')}
 								>
 									<span className="flex items-center gap-2">
-										<FaServer /> {about.skills.categories.backend}
+										<FaServer /> {about?.skills?.categories?.backend}
 									</span>
 								</button>
 								<button
@@ -176,7 +157,7 @@ const About = () => {
 									onClick={() => setActiveTab('others')}
 								>
 									<span className="flex items-center gap-2">
-										<FaTools /> {about.skills.categories.others}
+										<FaTools /> {about?.skills?.categories?.others}
 									</span>
 								</button>
 							</div>
@@ -214,11 +195,11 @@ const About = () => {
 							>
 								<h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
 									<FaGraduationCap className="text-[var(--primary)]" />{' '}
-									{about.education.title}
+									{about?.education?.title}
 								</h3>
 
 								<ul className="space-y-2">
-									{about.education.list.map((edu: string, index: number) => (
+									{about?.education?.list.map((edu: string, index: number) => (
 										<li key={index} className="flex items-center gap-2">
 											<span className="w-2 h-2 bg-[var(--primary)] rounded-full"></span>
 											<span className="text-[var(--text-primary)]">{edu}</span>
