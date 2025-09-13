@@ -34,7 +34,6 @@ const Hero = () => {
 	}
 
 	const hero = messages?.hero || {}
-	console.log(`🟢 hero:`, hero)
 
 	const resumePath =
 		locale === 'zh-TW'

@@ -18,9 +18,9 @@
 	"about": {
 		"title": "About Me",
 		"description": [
-			"I'm a frontend-focused engineer with full-stack capabilities, experienced in building scalable systems and improving development workflows across teams. I enjoy turning complex requirements into sustainable technical solutions that create real impact.",
-			"My approach is solution-oriented—not just writing code, but designing systems that enhance both user and developer experiences. I value clear communication, cross-functional collaboration, and continuous improvement.",
-			"Moving forward, I'm looking to grow beyond pure engineering roles into more collaborative, product-aligned positions—where I can bridge teams, support technical decision-making, and help drive meaningful outcomes."
+			"I'm a frontend-focused engineer with around 5 years of hands-on development experience and a cross-disciplinary background (editorial and marketing). I build scalable systems and streamline team workflows, turning complex requirements into practical, measurable outcomes.",
+			"My approach is solution-oriented—not just writing code, but designing systems that elevate both user experience (UX) and developer experience (DX). I value clear communication, cross-functional collaboration, and continuous improvement.",
+			"Looking ahead, I'm excited to grow into more product-aligned, impact-driven roles—bridging teams, supporting technical decisions, and turning ambiguity into validated results."
 		],
 		"cta": "Let's Collaborate",
 		"education": {
@@ -92,7 +92,7 @@
 				]
 			},
 			{
-				"company": "Lidemy Programming Bootcamp",
+				"company": "Lidemy Program",
 				"logo": "/portfolio/images/logo_lidemy.png",
 				"title": "Frontend Developer",
 				"period": "Nov 2020 - Nov 2021",
